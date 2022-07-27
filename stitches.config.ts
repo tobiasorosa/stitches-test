@@ -6,8 +6,9 @@ export const { styled, getCssText } = createStitches({
       default: 'Overpass',
     },
     colors: {
-      primary: 'hsl(206,10%,5%)',
+      primary: '#4065ff',
       white: 'white',
+      slate: '#373737'
     },
     fontSizes: {
       1: '14px',

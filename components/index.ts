@@ -1,3 +1,5 @@
 export * from './Text'
 export * from './Heading-1'
 export * from './Heading-2'
+export * from './HeaderStack'
+export * from './ContactContentStack'
