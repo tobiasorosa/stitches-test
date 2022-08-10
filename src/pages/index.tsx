@@ -1,34 +1,16 @@
 import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import HeaderImage from '../public/img/header-default-image.png';
+import HeaderImage from '~public/img/header-default-image.png';
 import DOMPurify from 'isomorphic-dompurify';
-import { GET_PAGE } from '../queries/get_page';
-import { ApolloClient, InMemoryCache, DefaultOptions } from '@apollo/client';
+import { GET_PAGE } from '~src/queries/get_page';
 import {
 	Heading1,
 	Heading2,
 	HeaderStack,
 	ContactContentStack,
 } from '../components';
-
-const defaultOptions: DefaultOptions = {
-	watchQuery: {
-		fetchPolicy: 'no-cache',
-		errorPolicy: 'ignore',
-	},
-	query: {
-		fetchPolicy: 'no-cache',
-		errorPolicy: 'all',
-	},
-};
-
-const client = new ApolloClient({
-	uri: 'https://www.idinheiro.com.br/graphql',
-	cache: new InMemoryCache(),
-	connectToDevTools: true,
-	defaultOptions,
-});
+import { client } from '../utils/apollo-client';
 
 export const getStaticProps: GetStaticProps = async () => {
 	const { data } = await client.query({
@@ -47,7 +29,7 @@ interface IHomeProps {
 	data: any;
 }
 
-const Home: NextPage<IHomeProps> = (props) => {
+const Home: NextPage<IHomeProps> = props => {
 	const { data } = props;
 
 	return (
