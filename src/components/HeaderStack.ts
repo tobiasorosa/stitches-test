@@ -1,4 +1,4 @@
-import { styled } from '~/stitches.config';
+import { styled } from '~/src/styles/stitches.config';
 
 export const HeaderStack = styled('div', {
 	alignItems: 'center',

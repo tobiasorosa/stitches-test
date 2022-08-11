@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { globalCss } from '~/stitches.config';
+import { globalCss } from '~/src/styles/stitches.config';
 
 const globalStyles = globalCss({
 	'*': {
