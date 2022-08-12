@@ -5,25 +5,14 @@ import { Calculadora } from '~/src/types/wp-graphql';
 
 import { FooterItem } from '~/src/utils/processFooter';
 import { MenuItem } from '~src/utils/processMegaMenu';
+import { Heading1 } from '../Theme/Heading-1';
+import { Container } from '../Theme/Container';
+import { Stack } from '../Theme/Stack';
+import Navbar from '../Utils/Header/Navbar';
+import { Text } from '../Theme';
+import Breadcrumb from '../Utils/Header/Breadcrumb';
 
-/**
- * Since the page name 'does not' use catch-all routes,
- * for example [slug],
- * that's why params would contain just slug and not an array of slugs , unlike [...slug].
- * For example, If we need to have dynamic route '/foo/'
- * Then we would add paths: [ params: { slug: 'foo' } } ]
- * Here slug will be 'foo', then Next.js will statically generate the page at /foo/
- *
- * At build time next js will will make an api call get the data and
- * generate a page bar.js inside .next/foo directory, so when the page is served on browser
- * data is already present, unlike getInitialProps which gets the page at build time but makes an api
- * call after page is served on the browser.
- *
- * @see https://nextjs.org/docs/basic-features/data-fetching#the-paths-key-required
- *
- */
-
-interface LayoutCalculatorPageProps {
+interface CalculatorLayoutProps {
 	data: Calculadora;
 	meta: WordPressMetaData;
 	menuData: MenuItem[];
@@ -31,7 +20,7 @@ interface LayoutCalculatorPageProps {
 	footerData?: FooterItem[];
 }
 
-const LayoutCalculatorPage: NextPage<LayoutCalculatorPageProps> = props => {
+const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 	const { data, meta, menuData, children, footerData } = props;
 
 	const breadcrumbs = useMemo(
@@ -41,25 +30,21 @@ const LayoutCalculatorPage: NextPage<LayoutCalculatorPageProps> = props => {
 
 	return (
 		<>
-			<Stack spacing={8}>
+			<Stack>
 				<Navbar data={menuData} />
 
 				<Container>
-					<Stack spacing={8}>
+					<Stack>
 						{breadcrumbs && <Breadcrumb items={breadcrumbs} />}
 
 						<LayoutArea>
 							<LayoutArea.Content>
 								<Stack>
-									<EditorialResponsibility isCalculator={true} />
-
-									<Heading as={'h1'} variant={'main'}>
-										{data.title}
-									</Heading>
+									<Heading1>{data.title}</Heading1>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (
-									<Text as={'strong'} fontSize={'md'} fontWeight={'bold'}>
+									<Text>
 										{data.customFieldCalculadoras.subtituloCalculadora}
 									</Text>
 								)}
@@ -98,4 +83,4 @@ const LayoutCalculatorPage: NextPage<LayoutCalculatorPageProps> = props => {
 	);
 };
 
-export default LayoutCalculatorPage;
+export default CalculatorLayout;

@@ -9,7 +9,7 @@ import {
 	Heading2,
 	HeaderStack,
 	ContactContentStack,
-} from '../components';
+} from '../components/Theme';
 import { client } from '../utils/apollo-client';
 
 export const getStaticProps: GetStaticProps = async () => {

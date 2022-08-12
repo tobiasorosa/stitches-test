@@ -1,5 +1,6 @@
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
+import CalculatorLayout from '~/src/components/Layouts/CalculatorLayout';
 import { GET_CALCULATOR } from '~/src/queries/get_calculator';
 import {
 	Calculadora,
@@ -68,16 +69,16 @@ const Home: NextPage<CalculatorPageProps> = props => {
 	const { data, meta, menuData, footerData } = props;
 
 	return (
-    <>
-      <LayoutCalculatorPage
-        data={data}
-        meta={meta}
-        menuData={menuData}
-        footerData={footerData}
-      >
-        <CalcWorkingDays />
-      </LayoutCalculatorPage>
-    </>
+		<>
+			<CalculatorLayout
+				data={data}
+				meta={meta}
+				menuData={menuData}
+				footerData={footerData}
+			>
+				<CalcWorkingDays />
+			</CalculatorLayout>
+		</>
 	);
 };
 
