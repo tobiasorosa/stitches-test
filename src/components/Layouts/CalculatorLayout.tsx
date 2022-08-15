@@ -11,6 +11,7 @@ import { Stack } from '../Theme/Stack';
 import Navbar from '../Utils/Header/Navbar';
 import { Text } from '../Theme';
 import Breadcrumb from '../Utils/Header/Breadcrumb';
+import { LayoutArea } from '~src/components/Layouts/LayoutArea';
 
 interface CalculatorLayoutProps {
 	data: Calculadora;
@@ -53,31 +54,31 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 							</LayoutArea.Content>
 
 							<LayoutArea.Sidebar>
-								<Adsense
+								{/* <Adsense
 									slot={meta?.configAd?.Calculadora?.topSidebar?.id_block}
 									format={'vertical'}
-								/>
+								/> */}
 							</LayoutArea.Sidebar>
 						</LayoutArea>
 
 						<LayoutArea>
 							<LayoutArea.Content>
-								<WpContent html={data?.content ?? ''} meta={meta} />
+								{/* <WpContent html={data?.content ?? ''} meta={meta} /> */}
 
-								<CardRelatedContentSimulate />
+								{/* <CardRelatedContentSimulate /> */}
 							</LayoutArea.Content>
 
 							<LayoutArea.Sidebar>
-								<Adsense
+								{/* <Adsense
 									slot={meta?.configAd?.Calculadora?.bottomSidebar?.id_block}
 									format={'vertical'}
-								/>
+								/> */}
 							</LayoutArea.Sidebar>
 						</LayoutArea>
 					</Stack>
 				</Container>
 
-				<Footer data={footerData} />
+				{/* <Footer data={footerData} /> */}
 			</Stack>
 		</>
 	);
