@@ -8,6 +8,8 @@ export * from './HStack';
 export * from './Grid';
 export * from './GridArticle';
 export * from './GridAside';
+export * from './Input';
+export * from './Label';
 export * from './Link';
 export * from './Stack';
 export * from './Text';
