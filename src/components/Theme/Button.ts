@@ -11,6 +11,7 @@ export const Button = styled('button', {
 	userSelect: 'none',
 	whiteSpace: 'none',
 	verticalAlign: 'center',
+	cursor: 'pointer',
 
 	variants: {
 		color: {
@@ -22,6 +23,18 @@ export const Button = styled('button', {
 					'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
 				transitionDuration: '200ms',
 				background: '#EDF2F7',
+
+				'&:hover': {
+					background: '#E2E8F0',
+				},
+
+				'&:active': {
+					background: '#CBD5E0',
+				},
+
+				'&:focus': {
+					boxShadow: '0 0 0 3px rgba(66, 153, 225, 0.6);',
+				},
 			},
 		},
 		size: {

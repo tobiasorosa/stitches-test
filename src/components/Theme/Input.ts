@@ -11,6 +11,7 @@ export const Input = styled('input', {
 				backgroundColor: '#EDF2F7',
 				borderColor: 'transparent',
 				borderRadius: '0.125rem',
+				border: '2px solid transparent',
 				height: '2rem',
 				paddingInlineEnd: '2rem',
 				paddingInlineStart: '0.75rem',
