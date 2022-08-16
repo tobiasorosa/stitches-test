@@ -1,4 +1,5 @@
 export * from './Box';
+export * from './Button';
 export * from './ContactContentStack';
 export * from './Container';
 export * from './HeaderStack';

@@ -4,6 +4,7 @@ import { Box, Container, HStack, VStack } from '../../Theme';
 import IdinheiroLogo from '~public/img/idinheiro.svg';
 import NavbarOptionsItems from './NavbarOptionsItems';
 import NavbarOptions from './NavbarOptions';
+import { Search } from './Search';
 
 interface NavbarProps {
 	data?: MenuItem[];
@@ -12,6 +13,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = props => {
 	const { data: SSRData, ...rest } = props;
 	const data = SSRData;
+	console.log(data);
 
 	return (
 		<>
@@ -49,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 										display: 'block',
 									}}
 								>
-									<input type={'text'} />
+									<Search />
 								</Box>
 							</HStack>
 

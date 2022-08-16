@@ -5,15 +5,21 @@ const globalStyles = globalCss({
 	'*': {
 		margin: 0,
 		padding: 0,
+	},
+	'*, *::before, ::after': {
+		borderColor: '#E2E8F0',
+		wordWrap: 'break-word',
+		borderWidth: 0,
+		borderStyle: 'solid',
 		boxSizing: 'border-box',
 	},
-
-	html: {
+	'html, input': {
 		fontFamily: 'Overpass, sans-serif',
 	},
 	body: {
 		fontFamily: 'Overpass, Arial, sans-serif',
 		fontWeight: 400,
+		color: '#1A202C',
 	},
 	a: {
 		textDecoration: 'none',
