@@ -1,8 +1,6 @@
 import { styled } from '~src/styles/stitches.config';
 
 export const Box = styled('div', {
-	display: 'block',
-
 	variants: {
 		for: {
 			'right-addon': {
@@ -23,6 +21,12 @@ export const Box = styled('div', {
 				display: 'flex',
 				position: 'relative',
 				maxWidth: '100%',
+			},
+
+			separator: {
+				flex: 1,
+				justifySelf: 'stretch',
+				alignSelf: 'stretch',
 			},
 		},
 	},

@@ -1,9 +1,32 @@
 import { styled } from '~/src/styles/stitches.config';
 
 export const Container = styled('div', {
-	display: 'flex',
-	flexDirection: 'row',
-	alignItems: 'center',
-	maxWidth: '1280px',
-	paddingX: 5,
+	'@sm': {
+		maxWidth: '540px',
+	},
+
+	'@md': {
+		maxWidth: '720px',
+	},
+
+	'@lg': {
+		maxWidth: '900px',
+	},
+
+	'@xl': {
+		maxWidth: '1140px',
+	},
+
+	variants: {
+		for: {
+			navbar: {
+				width: '100%',
+				marginInlineStart: 'auto',
+				marginInlineEnd: 'auto',
+				paddingInlineStart: '1rem',
+				paddingInlineEnd: '1rem',
+				alignSelf: 'center',
+			},
+		},
+	},
 });

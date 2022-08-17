@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItem } from '~/src/utils/processMegaMenu';
-import { Box, Container, HStack, VStack } from '../../Theme';
+import { Box, Container, HStack, Stack, VStack } from '../../Theme';
 import IdinheiroLogo from '~public/img/idinheiro.svg';
 import NavbarOptionsItems from './NavbarOptionsItems';
 import NavbarOptions from './NavbarOptions';
@@ -22,56 +22,55 @@ const Navbar: React.FC<NavbarProps> = props => {
 					css={{
 						position: 'relative',
 						zIndex: 1,
-						paddingTop: 6,
+						paddingTop: '1.5rem',
 						paddingBottom: 6,
 						borderBottomWidth: 2,
-						borderBottomColor: 'blue',
+						borderBottomColor: 'e5efff',
 						boxShadow: '0 4px 5px 0 #e6effd',
 					}}
 				>
-					<Container>
-						<VStack
-							css={{
-								alignItems: 'stretch',
-							}}
-						>
-							<HStack>
-								{/* using the tag a because of an error that break the menu on mobile,  https://github.com/vercel/next.js/issues/20434 */}
+					<Container for='navbar'>
+						<Stack for='navbar-container'>
+							<Stack for='navbar'>
+								<HStack>
+									{/* using the tag a because of an error that break the menu on mobile,  https://github.com/vercel/next.js/issues/20434 */}
 
-								<a href={'https://www.idinheiro.com.br/'}>
-									<IdinheiroLogo
-										width={'190px'}
-										height={'32px'}
-										alt={'idinheiro'}
-									/>
-								</a>
+									<a href={'https://www.idinheiro.com.br/'}>
+										<IdinheiroLogo
+											width={'190px'}
+											height={'32px'}
+											alt={'idinheiro'}
+										/>
+									</a>
 
-								<Box
+									<Box for='separator' />
+
+									<Box>
+										<Search />
+									</Box>
+								</HStack>
+
+								<HStack
 									css={{
-										display: 'block',
+										justifyContent: 'space-between',
+										display: 'inline-flex', //BASE NONE
 									}}
 								>
-									<Search />
-								</Box>
-							</HStack>
-
-							<HStack
-								css={{
-									justifyContent: 'space-between',
-									display: 'inline-flex', //BASE NONE
-								}}
-							>
-								{data?.map(it => (
-									<NavbarOptions
-										key={it.id}
-										title={it.label}
-										categoryUrl={it.url}
-									>
-										<NavbarOptionsItems data-items={it.childItems} />
-									</NavbarOptions>
-								))}
-							</HStack>
-						</VStack>
+									{data?.map(it => (
+										<>
+											{it.label}
+											<NavbarOptions
+												key={it.id}
+												title={it.label}
+												categoryUrl={it.url}
+											>
+												<NavbarOptionsItems data-items={it.childItems} />
+											</NavbarOptions>
+										</>
+									))}
+								</HStack>
+							</Stack>
+						</Stack>
 					</Container>
 				</Box>
 			</Box>

@@ -41,7 +41,7 @@ export const Search = () => {
 											marginRight: '0.5rem',
 										}}
 									>
-										<SearchIcon />
+										<SearchIcon width='0.875rem' />
 									</Button>
 								</Box>
 							</Box>
