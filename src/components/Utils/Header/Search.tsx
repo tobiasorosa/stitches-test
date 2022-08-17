@@ -1,7 +1,7 @@
 import { Field, FieldProps, Form, Formik } from 'formik';
 import { useRouter } from 'next/router';
 import SearchIcon from '~public/img/icons/search-icon.svg';
-import { Button, Input, Stack } from '../../Theme';
+import { Box, Button, Input } from '../../Theme';
 
 export const Search = () => {
 	const router = useRouter();
@@ -25,28 +25,26 @@ export const Search = () => {
 				<Form target='_top'>
 					<Field name='query'>
 						{(context: FieldProps) => (
-							<Stack
-								css={{
-									width: '20rem',
-									maxWidth: 'full',
-								}}
-							>
+							<Box for='input-group'>
 								<Input
 									type='text'
 									variant='search'
 									placeholder='Pesquise no iDinheiro'
+									{...context.field}
 								/>
-								<Button
-									size='sm'
-									color='transparent'
-									border='rounded'
-									css={{
-										marginRight: '0.5rem',
-									}}
-								>
-									<SearchIcon width='1rem' />
-								</Button>
-							</Stack>
+								<Box for='right-addon'>
+									<Button
+										size='sm'
+										color='transparent'
+										border='rounded'
+										css={{
+											marginRight: '0.5rem',
+										}}
+									>
+										<SearchIcon />
+									</Button>
+								</Box>
+							</Box>
 						)}
 					</Field>
 				</Form>

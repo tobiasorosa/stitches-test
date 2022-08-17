@@ -2,15 +2,13 @@ import { styled } from '~src/styles/stitches.config';
 
 export const Button = styled('button', {
 	width: 'auto',
-	paddingInlineStart: '0.75rem',
-	paddingInlineEnd: '0.75rem',
 	display: 'inline-flex',
 	appearance: 'none',
 	alignItems: 'center',
 	justifyContent: 'center',
 	userSelect: 'none',
 	whiteSpace: 'none',
-	verticalAlign: 'center',
+	verticalAlign: 'middle',
 	cursor: 'pointer',
 
 	variants: {

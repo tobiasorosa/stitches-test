@@ -46,6 +46,9 @@ const globalStyles = globalCss({
 		margin: 0,
 		border: 0,
 	},
+	'button, input': {
+		overflow: 'visible',
+	},
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
