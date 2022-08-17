@@ -58,7 +58,7 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 };
 
 const Content = ({ children }: HelperLayoutAreaProps) => {
-	return <>{children && <Stack>{children}</Stack>}</>;
+	return <>{children && <Box>{children}</Box>}</>;
 };
 
 const Sidebar = ({ children }: HelperLayoutAreaProps) => {

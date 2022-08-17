@@ -27,6 +27,10 @@ const Navbar: React.FC<NavbarProps> = props => {
 						borderBottomWidth: 2,
 						borderBottomColor: 'e5efff',
 						boxShadow: '0 4px 5px 0 #e6effd',
+
+						'@lg': {
+							paddingBottom: 0,
+						},
 					}}
 				>
 					<Container for='navbar'>
@@ -45,7 +49,16 @@ const Navbar: React.FC<NavbarProps> = props => {
 
 									<Box for='separator' />
 
-									<Box>
+									<Box
+										css={{
+											'@base': {
+												display: 'none',
+											},
+											'@lg': {
+												display: 'block',
+											},
+										}}
+									>
 										<Search />
 									</Box>
 								</HStack>
@@ -54,11 +67,15 @@ const Navbar: React.FC<NavbarProps> = props => {
 									css={{
 										justifyContent: 'space-between',
 										display: 'inline-flex', //BASE NONE
+										marginTop: '2rem',
+
+										'@base': {
+											display: 'none',
+										},
 									}}
 								>
 									{data?.map(it => (
 										<>
-											{it.label}
 											<NavbarOptions
 												key={it.id}
 												title={it.label}

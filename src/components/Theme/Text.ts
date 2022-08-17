@@ -15,5 +15,21 @@ export const Text = styled('p', {
 				fontSize: '$3',
 			},
 		},
+
+		for: {
+			'menu-option-item-label': {
+				marginTop: '1rem',
+				marginBottom: 0,
+				fontWeight: 'bold',
+				textTransform: 'uppercase',
+				color: '#0071ff',
+				fontSize: '0.875rem',
+
+				'@lg': {
+					marginTop: 0,
+					marginBottom: '1rem',
+				},
+			},
+		},
 	},
 });

@@ -7,9 +7,8 @@ import { FooterItem } from '~/src/utils/processFooter';
 import { MenuItem } from '~src/utils/processMegaMenu';
 import { Heading1 } from '../Theme/Heading-1';
 import { Container } from '../Theme/Container';
-import { Stack } from '../Theme/Stack';
 import Navbar from '../Utils/Header/Navbar';
-import { Text, VStack } from '../Theme';
+import { Box, Stack, Text } from '../Theme';
 import Breadcrumb from '../Utils/Header/Breadcrumb';
 import { LayoutArea } from '~src/components/Layouts/LayoutArea';
 
@@ -31,7 +30,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 
 	return (
 		<>
-			<VStack>
+			<Box>
 				<Navbar data={menuData} />
 
 				<Container>
@@ -79,7 +78,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 				</Container>
 
 				{/* <Footer data={footerData} /> */}
-			</VStack>
+			</Box>
 		</>
 	);
 };

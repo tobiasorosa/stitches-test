@@ -20,6 +20,8 @@ const globalStyles = globalCss({
 		fontFamily: 'Overpass, Arial, sans-serif',
 		fontWeight: 400,
 		color: '#1A202C',
+		lineHeight: 1.5,
+		minHeight: '100%',
 	},
 	a: {
 		textDecoration: 'none',
@@ -48,6 +50,13 @@ const globalStyles = globalCss({
 	},
 	'button, input': {
 		overflow: 'visible',
+		background: 'transparent',
+	},
+	'button, input, optgroup, select, textarea': {
+		fontFamily: 'inherit',
+		fontSize: '100%',
+		lineHeight: 1.15,
+		margin: 0,
 	},
 });
 

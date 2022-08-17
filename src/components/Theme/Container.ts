@@ -1,6 +1,12 @@
 import { styled } from '~/src/styles/stitches.config';
 
 export const Container = styled('div', {
+	width: '100%',
+	marginInlineStart: 'auto',
+	marginInlineEnd: 'auto',
+	paddingInlineStart: '1rem',
+	paddingInlineEnd: '1rem',
+
 	'@sm': {
 		maxWidth: '540px',
 	},
