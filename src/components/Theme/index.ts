@@ -12,6 +12,7 @@ export * from './GridAside';
 export * from './Input';
 export * from './Label';
 export * from './Link';
+export * from './ListItem';
 export * from './Stack';
 export * from './Text';
 export * from './VStack';

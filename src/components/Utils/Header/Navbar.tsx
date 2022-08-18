@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItem } from '~/src/utils/processMegaMenu';
-import { Box, Container, HStack, Stack, VStack } from '../../Theme';
+import { Box, Container, HStack, Link, Stack, VStack } from '../../Theme';
 import IdinheiroLogo from '~public/img/idinheiro.svg';
 import NavbarOptionsItems from './NavbarOptionsItems';
 import NavbarOptions from './NavbarOptions';
@@ -34,59 +34,64 @@ const Navbar: React.FC<NavbarProps> = props => {
 					}}
 				>
 					<Container for='navbar'>
-						<Stack for='navbar-container'>
-							<Stack for='navbar'>
-								<HStack>
-									{/* using the tag a because of an error that break the menu on mobile,  https://github.com/vercel/next.js/issues/20434 */}
+						<Stack for='navbar'>
+							<HStack>
+								{/* using the tag a because of an error that break the menu on mobile,  https://github.com/vercel/next.js/issues/20434 */}
 
-									<a href={'https://www.idinheiro.com.br/'}>
-										<IdinheiroLogo
-											width={'190px'}
-											height={'32px'}
-											alt={'idinheiro'}
-										/>
-									</a>
-
-									<Box for='separator' />
-
-									<Box
-										css={{
-											'@base': {
-												display: 'none',
-											},
-											'@lg': {
-												display: 'block',
-											},
-										}}
-									>
-										<Search />
-									</Box>
-								</HStack>
-
-								<HStack
+								<Link
+									href={'https://www.idinheiro.com.br/'}
 									css={{
-										justifyContent: 'space-between',
-										display: 'inline-flex', //BASE NONE
-										marginTop: '2rem',
-
-										'@base': {
-											display: 'none',
+										'@lg': {
+											height: '32px',
 										},
 									}}
 								>
-									{data?.map(it => (
-										<>
-											<NavbarOptions
-												key={it.id}
-												title={it.label}
-												categoryUrl={it.url}
-											>
-												<NavbarOptionsItems data-items={it.childItems} />
-											</NavbarOptions>
-										</>
-									))}
-								</HStack>
-							</Stack>
+									<IdinheiroLogo
+										width={'190px'}
+										height={'32px'}
+										alt={'idinheiro'}
+									/>
+								</Link>
+
+								<Box for='separator' />
+
+								<Box
+									css={{
+										'@base': {
+											display: 'none',
+										},
+										'@lg': {
+											display: 'block',
+										},
+									}}
+								>
+									<Search />
+								</Box>
+							</HStack>
+
+							<HStack
+								css={{
+									justifyContent: 'space-between',
+									display: 'inline-flex', //BASE NONE
+									marginTop: '2rem',
+
+									'@base': {
+										display: 'none',
+									},
+								}}
+							>
+								{data?.map(it => (
+									<>
+										<NavbarOptions
+											key={it.id}
+											title={it.label}
+											categoryUrl={it.url}
+										>
+											<NavbarOptionsItems data-items={it.childItems} />
+										</NavbarOptions>
+									</>
+								))}
+							</HStack>
 						</Stack>
 					</Container>
 				</Box>

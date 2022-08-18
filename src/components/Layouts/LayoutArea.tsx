@@ -1,5 +1,5 @@
 import { Children } from 'react';
-import { Box, Grid, GridArticle, GridAside, Stack } from '../Theme';
+import { Box, Grid, GridArticle, GridAside, Stack, VStack } from '../Theme';
 
 type LayoutAreaProps = {
 	children?: React.ReactElement | React.ReactElement[];
@@ -30,6 +30,7 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 				columnGap: 8,
 				rowGap: 8,
 			}}
+			for='content-layout'
 			// columnGap={{ base: 0, lg: 8 }}
 		>
 			<GridArticle
@@ -58,7 +59,7 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 };
 
 const Content = ({ children }: HelperLayoutAreaProps) => {
-	return <>{children && <Box>{children}</Box>}</>;
+	return <>{children && <VStack>{children}</VStack>}</>;
 };
 
 const Sidebar = ({ children }: HelperLayoutAreaProps) => {

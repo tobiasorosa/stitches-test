@@ -33,18 +33,30 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 			<Box>
 				<Navbar data={menuData} />
 
-				<Container>
-					<Stack>
+				<Container
+					css={{
+						marginTop: '2rem',
+					}}
+				>
+					<Stack
+						css={{
+							flexDirection: 'column',
+						}}
+					>
 						{breadcrumbs && <Breadcrumb items={breadcrumbs} />}
 
 						<LayoutArea>
 							<LayoutArea.Content>
-								<Stack>
+								<Stack
+									css={{
+										flexDirection: 'column',
+									}}
+								>
 									<Heading1>{data.title}</Heading1>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (
-									<Text>
+									<Text for='subtitle' as='strong'>
 										{data.customFieldCalculadoras.subtituloCalculadora}
 									</Text>
 								)}

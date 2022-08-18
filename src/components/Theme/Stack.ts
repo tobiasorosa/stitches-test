@@ -9,15 +9,8 @@ export const Stack = styled('div', {
 				width: '100%',
 				marginInlineStart: 'auto',
 				marginInlineEnd: 'auto',
-				paddingInlineStart: '1rem',
-				paddingInlineEnd: '1rem',
-				alignSelf: 'center',
 				flexDirection: 'column',
-			},
-
-			'navbar-container': {
 				alignItems: 'stretch',
-				flexDirection: 'column',
 			},
 
 			'menu-option-item-group': {

@@ -6,6 +6,7 @@ export const Container = styled('div', {
 	marginInlineEnd: 'auto',
 	paddingInlineStart: '1rem',
 	paddingInlineEnd: '1rem',
+	alignSelf: 'center',
 
 	'@sm': {
 		maxWidth: '540px',

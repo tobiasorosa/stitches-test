@@ -39,9 +39,6 @@ const globalStyles = globalCss({
 	'ul, ol': {
 		listStylePosition: 'inside',
 	},
-	li: {
-		marginBottom: '0.625rem',
-	},
 	fieldset: {
 		minWidth: 0,
 		padding: 0,

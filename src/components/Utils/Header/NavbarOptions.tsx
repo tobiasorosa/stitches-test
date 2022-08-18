@@ -14,7 +14,6 @@ const NavbarOptions: React.FC<NavbarOptionsProps> = props => {
 	return (
 		<Box
 			key={key}
-			onMouseLeave={() => console.log('saiu')}
 			css={{
 				'&:hover': {
 					'& div div': { display: 'flex' },

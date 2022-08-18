@@ -17,6 +17,14 @@ export const Text = styled('p', {
 		},
 
 		for: {
+			subtitle: {
+				color: '#4A5568',
+				fontSize: '1rem',
+				fontWeight: 700,
+
+				marginTop: '2rem',
+			},
+
 			'menu-option-item-label': {
 				marginTop: '1rem',
 				marginBottom: 0,
