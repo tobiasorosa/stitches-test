@@ -22,6 +22,7 @@ const globalStyles = globalCss({
 		color: '#1A202C',
 		lineHeight: 1.5,
 		minHeight: '100%',
+		overflowY: 'scroll',
 	},
 	a: {
 		textDecoration: 'none',

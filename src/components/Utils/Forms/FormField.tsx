@@ -1,5 +1,5 @@
 import { Field, FieldAttributes, FieldProps } from 'formik';
-import { Input, Label, Stack, Text } from '../../Theme';
+import { Label, Stack, Text, VStack } from '../../Theme';
 
 interface FormFieldProps<V> {
 	children?: (
@@ -11,6 +11,8 @@ interface FormFieldProps<V> {
 	tooltip?: string;
 	optional?: boolean;
 	hideError?: boolean;
+	inputLeftAddon?: JSX.Element;
+	inputRightAddon?: JSX.Element;
 }
 
 export function FormField<V = string>(
@@ -28,17 +30,37 @@ export function FormField<V = string>(
 		display,
 		align,
 		direction,
+		inputLeftAddon,
+		inputRightAddon,
 		...rest
 	} = props;
 
 	return (
-		<Field {...rest}>
-			{(context: FieldProps<V>) => (
-				<>
-					<Label id={name}>{label}</Label>
-					{children?.(context)}
-				</>
-			)}
-		</Field>
+		<Stack>
+			{inputLeftAddon}
+			<Field {...rest}>
+				{(context: FieldProps<V>) => (
+					<VStack
+						css={{
+							width: '100%',
+						}}
+					>
+						<Label
+							id={name}
+							size='sm'
+							css={{
+								fontWeight: 600,
+								marginBottom: '0.5rem',
+								display: 'block',
+							}}
+						>
+							{label}
+						</Label>
+						{children?.(context)}
+					</VStack>
+				)}
+			</Field>
+			{inputRightAddon}
+		</Stack>
 	);
 }

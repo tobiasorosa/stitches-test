@@ -5,9 +5,13 @@ import CalculatorWorkingDays, {
 } from '~src/tools/calculators/calcWorkingDays';
 import { useContext } from './Context';
 import { date, object, ref } from 'yup';
-import { Container, Grid, Heading2, Stack } from '../Theme';
+import { Box, Container, Grid, Heading, Input, Stack, VStack } from '../Theme';
 import { Field, Form, Formik } from 'formik';
 import { FormField } from '../Utils/Forms/FormField';
+import { parseValue } from '~/src/tools/calculators/helpers/parseValue';
+
+import 'react-datepicker/dist/react-datepicker.css';
+import { SVGAddon } from './Addons';
 
 export const CalcWorkingDays: React.FC = () => {
 	const { data } = useContext<Calculadora>();
@@ -43,7 +47,7 @@ export const CalcWorkingDays: React.FC = () => {
 	});
 
 	return (
-		<Container>
+		<Container for='calculator-form'>
 			<Formik<InputWorkingDays>
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
@@ -51,21 +55,52 @@ export const CalcWorkingDays: React.FC = () => {
 			>
 				{() => (
 					<Form>
-						<Stack>
-							<Heading2>
+						<VStack>
+							<Heading as='h2' size='xl' align='center'>
 								{data?.customFieldCalculadoras?.tituloFormulario ?? data?.title}
-							</Heading2>
-						</Stack>
+							</Heading>
 
-						<Grid>
-							<FormField>
-								{context => <Field type='string' name='initialDate' />}
-							</FormField>
-
-							<FormField>
-								{context => <Field type='string' name='finalDate' />}
-							</FormField>
-						</Grid>
+							<Grid
+								css={{
+									gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
+									gridGap: '1rem',
+									marginTop: '2rem',
+									'@sm': {
+										gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+									},
+								}}
+							>
+								<Box>
+									<FormField label='Data de início'>
+										{context => (
+											<Input
+												variant='calculator-form'
+												placeholder='dd / mm / aaaa'
+											/>
+										)}
+									</FormField>
+								</Box>
+								<Box>
+									<FormField
+										label='Data final'
+										inputRightAddon={<SVGAddon icon='calendar' />}
+									>
+										{context => (
+											<Input
+												variant='calculator-form'
+												placeholder='dd / mm / aaaa'
+												onChange={e => {
+													context.form.setFieldValue(
+														context.field.name,
+														parseValue(e.currentTarget.value)
+													);
+												}}
+											/>
+										)}
+									</FormField>
+								</Box>
+							</Grid>
+						</VStack>
 					</Form>
 				)}
 			</Formik>

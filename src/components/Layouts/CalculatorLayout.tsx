@@ -5,12 +5,17 @@ import { Calculadora } from '~/src/types/wp-graphql';
 
 import { FooterItem } from '~/src/utils/processFooter';
 import { MenuItem } from '~src/utils/processMegaMenu';
-import { Heading1 } from '../Theme/Heading-1';
+import { Heading } from '../Theme';
 import { Container } from '../Theme/Container';
 import Navbar from '../Utils/Header/Navbar';
 import { Box, Stack, Text } from '../Theme';
 import Breadcrumb from '../Utils/Header/Breadcrumb';
 import { LayoutArea } from '~src/components/Layouts/LayoutArea';
+import {
+	// CardRelatedContentSimulate,
+	Context,
+	ContextProps,
+} from '~src/components/Calculators/Context';
 
 interface CalculatorLayoutProps {
 	data: Calculadora;
@@ -28,8 +33,14 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 		[data]
 	);
 
+	const defaultValue: ContextProps = {
+		data,
+		meta,
+		customFieldCalculator: data.customFieldCalculadoras,
+	};
+
 	return (
-		<>
+		<Context.Provider value={defaultValue}>
 			<Box>
 				<Navbar data={menuData} />
 
@@ -52,7 +63,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 										flexDirection: 'column',
 									}}
 								>
-									<Heading1>{data.title}</Heading1>
+									<Heading for='title'>{data.title}</Heading>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (
@@ -91,7 +102,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 
 				{/* <Footer data={footerData} /> */}
 			</Box>
-		</>
+		</Context.Provider>
 	);
 };
 

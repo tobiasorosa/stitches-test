@@ -34,6 +34,20 @@ export const Container = styled('div', {
 				paddingInlineEnd: '1rem',
 				alignSelf: 'center',
 			},
+
+			'calculator-form': {
+				padding: '0.75rem',
+				paddingInline: 0,
+				marginTop: '2rem',
+				border: '1px solid #E2E8F0',
+				borderRadius: 8,
+				display: 'flex',
+				flexDirection: 'column',
+
+				'@sm': {
+					padding: '1.75rem',
+				},
+			},
 		},
 	},
 });

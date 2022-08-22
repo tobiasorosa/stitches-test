@@ -4,12 +4,7 @@ import Image from 'next/image';
 import HeaderImage from '~public/img/header-default-image.png';
 import DOMPurify from 'isomorphic-dompurify';
 import { GET_PAGE } from '~src/queries/get_page';
-import {
-	Heading1,
-	Heading2,
-	HeaderStack,
-	ContactContentStack,
-} from '../components/Theme';
+import { Heading, HeaderStack, ContactContentStack } from '../components/Theme';
 import { client } from '../utils/apollo-client';
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -45,15 +40,17 @@ const Home: NextPage<IHomeProps> = props => {
 					{data.title && data.bannerPaginasInternas?.subtitulo && (
 						<HeaderStack>
 							<Image src={HeaderImage} alt='Header' />
-							<Heading1
+							<Heading
 								css={{
 									paddingBottom: '2rem',
 									paddingTop: '3rem',
 								}}
 							>
 								{data.title}
-							</Heading1>
-							<Heading2>{data.bannerPaginasInternas?.subtitulo}</Heading2>
+							</Heading>
+							<Heading color='white' as='h2'>
+								{data.bannerPaginasInternas?.subtitulo}
+							</Heading>
 						</HeaderStack>
 					)}
 

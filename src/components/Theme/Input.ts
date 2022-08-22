@@ -28,6 +28,20 @@ export const Input = styled('input', {
 					borderColor: '#0066ff',
 				},
 			},
+
+			'calculator-form': {
+				width: '100%',
+				minWidth: 0,
+				outline: '2px solid transparent',
+				outlineOffset: '2px',
+				position: 'relative',
+				appearance: 'none',
+				fontSize: '$md',
+				paddingInline: '1rem',
+				height: '2.5rem',
+				borderRadius: '0.375rem',
+				background: '#E5EFFF',
+			},
 		},
 	},
 });

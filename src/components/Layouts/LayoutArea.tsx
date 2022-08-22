@@ -27,8 +27,8 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 		<Grid
 			css={{
 				gridTemplateColumns: 'repeat(12, [col-start] 1fr)',
-				columnGap: 8,
-				rowGap: 8,
+				gridColumnGap: '2rem',
+				gridRowGap: '2rem',
 			}}
 			for='content-layout'
 			// columnGap={{ base: 0, lg: 8 }}

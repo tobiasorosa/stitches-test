@@ -28,6 +28,19 @@ export const Box = styled('div', {
 				justifySelf: 'stretch',
 				alignSelf: 'stretch',
 			},
+
+			'svg-addon': {
+				fontSize: '$md',
+				background: '#CCE0FE',
+				border: '2px solid transparent',
+				borderRadius: '0.375rem',
+				height: '2.5rem',
+				paddingInline: '1rem',
+				width: 'auto',
+				display: 'flex',
+				alignItems: 'center',
+				whiteSpace: 'nowrap',
+			},
 		},
 	},
 });
