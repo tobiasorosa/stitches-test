@@ -20,10 +20,25 @@ export const ResultContainer = ({ children }: ResultContainerProps) => {
 					marginTop: '2rem',
 				}}
 			>
-				<Button onClick={setFalse} variant='calculator-reset'>
+				<Button
+					onClick={setFalse}
+					variant='calculator-result'
+					border='rounded'
+					color='transparent'
+				>
 					Limpar
 				</Button>
-				<Button onClick={setTrue} disabled={!(isValid && dirty)}>
+				<Button
+					onClick={setTrue}
+					disabled={!(isValid && dirty)}
+					type={'submit'}
+					variant='calculator-result'
+					color='blue'
+					border='rounded'
+					css={{
+						marginInlineStart: '0.5rem',
+					}}
+				>
 					Calcular
 				</Button>
 			</Stack>

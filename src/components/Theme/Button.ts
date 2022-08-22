@@ -10,6 +10,12 @@ export const Button = styled('button', {
 	whiteSpace: 'none',
 	verticalAlign: 'middle',
 	cursor: 'pointer',
+	lineHeight: 1.2,
+
+	'&[disabled]': {
+		cursor: 'not-allowed',
+		opacity: 0.4,
+	},
 
 	variants: {
 		color: {
@@ -32,6 +38,33 @@ export const Button = styled('button', {
 
 				'&:focus': {
 					boxShadow: '0 0 0 3px rgba(66, 153, 225, 0.6);',
+				},
+			},
+
+			blue: {
+				outline: '2px solid transparent',
+				outlineOffset: '2px',
+				fontWeight: 600,
+				transitionProperty:
+					'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
+				transitionDuration: '200ms',
+				background: '#0066FF',
+				color: 'white',
+
+				'&:hover': {
+					background: '#0051CC',
+				},
+
+				'&:active': {
+					background: '#003D99',
+				},
+
+				'&:focus': {
+					boxShadow: '0 0 0 3px rgba(66, 153, 225, 0.6);',
+				},
+
+				'&:hover[disabled]': {
+					background: '#0066FF',
 				},
 			},
 		},
@@ -73,18 +106,7 @@ export const Button = styled('button', {
 				paddingBottom: '0.5rem',
 			},
 
-			'calculator-reset': {
-				display: 'inline-flex',
-				alignItems: 'center',
-				justifyContent: 'center',
-				userSelect: 'none',
-				outline: '2px solid transparent',
-				outlineOffset: '2px',
-				borderRadius: '9999px',
-				fontWeight: 600,
-				transitionProperty:
-					'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
-				transitionDuration: '200ms',
+			'calculator-result': {
 				fontSize: '$lg',
 				height: '3rem',
 				minWidth: '3rem',
