@@ -8,7 +8,7 @@ export const Heading = styled('h1', {
 	},
 
 	variants: {
-		for: {
+		variant: {
 			title: {
 				fontWeight: 600,
 				color: '#2D3748',

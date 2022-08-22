@@ -63,11 +63,11 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 										flexDirection: 'column',
 									}}
 								>
-									<Heading for='title'>{data.title}</Heading>
+									<Heading variant='title'>{data.title}</Heading>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (
-									<Text for='subtitle' as='strong'>
+									<Text variant='subtitle' as='strong'>
 										{data.customFieldCalculadoras.subtituloCalculadora}
 									</Text>
 								)}

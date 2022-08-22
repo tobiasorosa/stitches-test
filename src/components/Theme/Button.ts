@@ -48,7 +48,7 @@ export const Button = styled('button', {
 				borderRadius: '9999px',
 			},
 		},
-		for: {
+		variant: {
 			menu: {
 				borderRadius: 0,
 				textTransform: 'uppercase',
@@ -71,6 +71,24 @@ export const Button = styled('button', {
 				paddingInline: '1rem',
 				padding: 0,
 				paddingBottom: '0.5rem',
+			},
+
+			'calculator-reset': {
+				display: 'inline-flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				userSelect: 'none',
+				outline: '2px solid transparent',
+				outlineOffset: '2px',
+				borderRadius: '9999px',
+				fontWeight: 600,
+				transitionProperty:
+					'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
+				transitionDuration: '200ms',
+				fontSize: '$lg',
+				height: '3rem',
+				minWidth: '3rem',
+				paddingInline: '1.5rem',
 			},
 		},
 	},

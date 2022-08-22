@@ -25,14 +25,14 @@ export const Search = () => {
 				<Form target='_top'>
 					<Field name='query'>
 						{(context: FieldProps) => (
-							<Box for='input-group'>
+							<Box variant='input-group'>
 								<Input
 									type='text'
 									variant='search'
 									placeholder='Pesquise no iDinheiro'
 									{...context.field}
 								/>
-								<Box for='right-addon'>
+								<Box variant='right-addon'>
 									<Button
 										size='sm'
 										color='transparent'

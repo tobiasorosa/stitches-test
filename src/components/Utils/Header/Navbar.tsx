@@ -13,7 +13,6 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = props => {
 	const { data: SSRData, ...rest } = props;
 	const data = SSRData;
-	console.log(data);
 
 	return (
 		<>
@@ -33,8 +32,8 @@ const Navbar: React.FC<NavbarProps> = props => {
 						},
 					}}
 				>
-					<Container for='navbar'>
-						<Stack for='navbar'>
+					<Container variant='navbar'>
+						<Stack variant='navbar'>
 							<HStack>
 								{/* using the tag a because of an error that break the menu on mobile,  https://github.com/vercel/next.js/issues/20434 */}
 
@@ -53,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 									/>
 								</Link>
 
-								<Box for='separator' />
+								<Box variant='separator' />
 
 								<Box
 									css={{

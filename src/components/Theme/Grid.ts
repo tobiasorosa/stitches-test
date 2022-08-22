@@ -4,7 +4,7 @@ export const Grid = styled('div', {
 	display: 'grid',
 
 	variants: {
-		for: {
+		variant: {
 			'content-layout': {
 				marginTop: '2rem',
 			},

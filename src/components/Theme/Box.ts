@@ -2,7 +2,7 @@ import { styled } from '~src/styles/stitches.config';
 
 export const Box = styled('div', {
 	variants: {
-		for: {
+		variant: {
 			'right-addon': {
 				display: 'flex',
 				right: 0,

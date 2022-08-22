@@ -5,13 +5,18 @@ import CalculatorWorkingDays, {
 } from '~src/tools/calculators/calcWorkingDays';
 import { useContext } from './Context';
 import { date, object, ref } from 'yup';
-import { Box, Container, Grid, Heading, Input, Stack, VStack } from '../Theme';
-import { Field, Form, Formik } from 'formik';
+import { Box, Container, Grid, Heading, Stack, VStack } from '../Theme';
+import { Form, Formik } from 'formik';
 import { FormField } from '../Utils/Forms/FormField';
-import { parseValue } from '~/src/tools/calculators/helpers/parseValue';
+import { registerLocale } from 'react-datepicker';
+import pt from 'date-fns/locale/pt-BR';
 
 import 'react-datepicker/dist/react-datepicker.css';
 import { SVGAddon } from './Addons';
+import { DatePickerDynamic } from '../Utils/Calculators/DynamicDatepicker';
+import { ResultContainer } from './ResultContainer';
+
+registerLocale('pt', pt);
 
 export const CalcWorkingDays: React.FC = () => {
 	const { data } = useContext<Calculadora>();
@@ -47,7 +52,7 @@ export const CalcWorkingDays: React.FC = () => {
 	});
 
 	return (
-		<Container for='calculator-form'>
+		<Container variant='calculator-form'>
 			<Formik<InputWorkingDays>
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
@@ -72,37 +77,58 @@ export const CalcWorkingDays: React.FC = () => {
 							>
 								<Box>
 									<FormField
+										name={'initialDate'}
 										label='Data de início'
 										inputRightAddon={<SVGAddon icon='calendar' />}
 									>
 										{context => (
-											<Input
-												variant='calculator-form'
-												placeholder='dd / mm / aaaa'
+											<DatePickerDynamic
+												locale={'pt'}
+												selected={
+													(context.field.value &&
+														new Date(context.field.value)) ||
+													null
+												}
+												dateFormat={'dd/MM/yyyy'}
+												onChange={e => {
+													context.form.setFieldValue(context.field.name, e);
+												}}
+												id={'initialDate'}
+												autoComplete={'off'}
+												placeholderText={'dd / mm / aaaa'}
 											/>
 										)}
 									</FormField>
 								</Box>
 								<Box>
 									<FormField
+										name={'finalDate'}
 										label='Data final'
 										inputRightAddon={<SVGAddon icon='calendar' />}
 									>
 										{context => (
-											<Input
-												variant='calculator-form'
-												placeholder='dd / mm / aaaa'
+											<DatePickerDynamic
+												locale={'pt'}
+												selected={
+													(context.field.value &&
+														new Date(context.field.value)) ||
+													null
+												}
+												dateFormat={'dd/MM/yyyy'}
 												onChange={e => {
-													context.form.setFieldValue(
-														context.field.name,
-														parseValue(e.currentTarget.value)
-													);
+													context.form.setFieldValue(context.field.name, e);
 												}}
+												id={'finalDate'}
+												autoComplete={'off'}
+												placeholderText={'dd / mm / aaaa'}
 											/>
 										)}
 									</FormField>
 								</Box>
 							</Grid>
+							<ResultContainer>
+								<Stack>Teste</Stack>
+							</ResultContainer>
 						</VStack>
 					</Form>
 				)}

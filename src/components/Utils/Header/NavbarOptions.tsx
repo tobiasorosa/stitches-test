@@ -23,7 +23,7 @@ const NavbarOptions: React.FC<NavbarOptionsProps> = props => {
 			}}
 		>
 			<Link href={categoryUrl} className='menu_item_category'>
-				<Button for='menu'>
+				<Button variant='menu'>
 					<Box
 						css={{
 							marginX: 1,

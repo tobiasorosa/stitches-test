@@ -16,7 +16,7 @@ export const Text = styled('p', {
 			},
 		},
 
-		for: {
+		variant: {
 			subtitle: {
 				color: '#4A5568',
 				fontSize: '1rem',

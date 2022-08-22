@@ -25,7 +25,7 @@ export const Container = styled('div', {
 	},
 
 	variants: {
-		for: {
+		variant: {
 			navbar: {
 				width: '100%',
 				marginInlineStart: 'auto',

@@ -21,3 +21,13 @@ export const Context = React.createContext<ContextProps>({});
 export function useContext<T = Post | Noticia | Calculadora>() {
 	return React.useContext<ContextProps<T>>(Context as any);
 }
+
+export interface ContextCalculatorProps {
+	value: boolean;
+	setTrue: () => void;
+	setFalse: () => void;
+}
+
+export const ContextCalculator = React.createContext<ContextCalculatorProps>(
+	{} as ContextCalculatorProps
+);

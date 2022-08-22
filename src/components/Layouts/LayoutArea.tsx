@@ -30,7 +30,7 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 				gridColumnGap: '2rem',
 				gridRowGap: '2rem',
 			}}
-			for='content-layout'
+			variant='content-layout'
 			// columnGap={{ base: 0, lg: 8 }}
 		>
 			<GridArticle

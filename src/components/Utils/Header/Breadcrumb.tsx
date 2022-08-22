@@ -8,7 +8,6 @@ interface BreadcrumbProps {
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
-	console.log(items);
 	return (
 		<nav>
 			<ol>
