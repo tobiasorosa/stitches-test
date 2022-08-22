@@ -37,7 +37,6 @@ export function FormField<V = string>(
 
 	return (
 		<Stack>
-			{inputLeftAddon}
 			<Field {...rest}>
 				{(context: FieldProps<V>) => (
 					<VStack
@@ -56,11 +55,14 @@ export function FormField<V = string>(
 						>
 							{label}
 						</Label>
-						{children?.(context)}
+						<Stack>
+							{inputLeftAddon}
+							{children?.(context)}
+							{inputRightAddon}
+						</Stack>
 					</VStack>
 				)}
 			</Field>
-			{inputRightAddon}
 		</Stack>
 	);
 }

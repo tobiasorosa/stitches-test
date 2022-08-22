@@ -9,5 +9,9 @@ export interface SVGAddonProps {
 export const SVGAddon = (props: SVGAddonProps) => {
 	const { icon } = props;
 
-	return <Box for='svg-addon'>{icon === 'calendar' && <CalendarIcon />}</Box>;
+	return (
+		<Box for='svg-addon'>
+			{icon === 'calendar' && <CalendarIcon width='18px' />}
+		</Box>
+	);
 };

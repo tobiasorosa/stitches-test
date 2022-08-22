@@ -71,7 +71,10 @@ export const CalcWorkingDays: React.FC = () => {
 								}}
 							>
 								<Box>
-									<FormField label='Data de início'>
+									<FormField
+										label='Data de início'
+										inputRightAddon={<SVGAddon icon='calendar' />}
+									>
 										{context => (
 											<Input
 												variant='calculator-form'
