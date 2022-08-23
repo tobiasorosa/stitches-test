@@ -1,10 +1,10 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class MinMaxValue {
-  @Serialize.AxiosExpose()
-  valueMin?: number
+	@AxiosExpose()
+	valueMin?: number;
 
-  @Serialize.AxiosExpose()
-  valueMax?: number
+	@AxiosExpose()
+	valueMax?: number;
 }

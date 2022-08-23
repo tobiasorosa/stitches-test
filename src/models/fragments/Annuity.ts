@@ -1,16 +1,16 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class Annuity {
-  @Serialize.AxiosExpose('valor')
-  amount?: number
+	@AxiosExpose('valor')
+	amount?: number;
 
-  @Serialize.AxiosExpose('qtdParcelas')
-  installments?: number
+	@AxiosExpose('qtdParcelas')
+	installments?: number;
 
-  @Serialize.AxiosExpose('valorParcela')
-  amountInstallment?: number
+	@AxiosExpose('valorParcela')
+	amountInstallment?: number;
 
-  @Serialize.AxiosExpose('observacao')
-  observation?: string
+	@AxiosExpose('observacao')
+	observation?: string;
 }

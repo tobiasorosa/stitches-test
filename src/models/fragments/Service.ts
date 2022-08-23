@@ -1,12 +1,13 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
+
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class Service {
-  @Serialize.AxiosExpose()
-  id?: string
+	@AxiosExpose()
+	id?: string;
 
-  @Serialize.AxiosExpose()
-  name?: string
+	@AxiosExpose()
+	name?: string;
 
-  @Serialize.AxiosExpose()
-  key?: string
+	@AxiosExpose()
+	key?: string;
 }

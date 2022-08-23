@@ -1,9 +1,9 @@
 import { plainToClass } from 'class-transformer';
 import _ from 'lodash';
 
-import { GutenbergResourcesWrapper } from '~src/models/guttenberg/GutenbergResourcesWrapper';
-import { GutenbergWrapper } from '~src/models/guttenberg/GutenbergWrapper';
-import type { ModelCustomAd } from '~src/models/guttenberg/ModelCustomAd';
+import { GutenbergResourcesWrapper } from '~src/models/gutenberg/GutenbergResourcesWrapper';
+import { GutenbergWrapper } from '~src/models/gutenberg/GutenbergWrapper';
+import type { ModelCustomAd } from '~src/models/gutenberg/ModelCustomAd';
 import type { IGutenberg } from '~src/models/interfaces/IGutenberg';
 import { IShortcode } from '~src/models/interfaces/IShortcode';
 import { ShortcodeWrapper } from '~/src/models/shortcode/ShortcodeWrapper';

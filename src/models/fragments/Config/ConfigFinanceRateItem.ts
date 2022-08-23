@@ -1,10 +1,13 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import {
+	AxiosExclude,
+	AxiosResponseExpose,
+} from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ConfigFinanceRateItem {
-  @Serialize.AxiosResponseExpose('name')
-  name?: string
+	@AxiosResponseExpose('name')
+	name?: string;
 
-  @Serialize.AxiosResponseExpose('rate')
-  rate?: number
+	@AxiosResponseExpose('rate')
+	rate?: number;
 }

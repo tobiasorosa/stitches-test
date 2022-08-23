@@ -1,10 +1,10 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class Query {
-  @Serialize.AxiosExpose('base_currency')
-  base_currency?: string
+	@AxiosExpose('base_currency')
+	base_currency?: string;
 
-  @Serialize.AxiosExpose('timestamp')
-  timestamp?: number
+	@AxiosExpose('timestamp')
+	timestamp?: number;
 }

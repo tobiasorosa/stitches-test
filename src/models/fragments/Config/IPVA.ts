@@ -1,31 +1,34 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import {
+	AxiosExclude,
+	AxiosResponseExpose,
+} from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class IPVAitem {
-  @Serialize.AxiosResponseExpose()
-  state?: string
+	@AxiosResponseExpose()
+	state?: string;
 
-  @Serialize.AxiosResponseExpose()
-  particular?: number
+	@AxiosResponseExpose()
+	particular?: number;
 
-  @Serialize.AxiosResponseExpose()
-  caminhonetes?: number
+	@AxiosResponseExpose()
+	caminhonetes?: number;
 
-  @Serialize.AxiosResponseExpose()
-  transporte?: number
+	@AxiosResponseExpose()
+	transporte?: number;
 
-  @Serialize.AxiosResponseExpose()
-  motocicletas?: number
+	@AxiosResponseExpose()
+	motocicletas?: number;
 
-  @Serialize.AxiosResponseExpose()
-  locadoras?: number
+	@AxiosResponseExpose()
+	locadoras?: number;
 
-  @Serialize.AxiosResponseExpose()
-  onibus?: number
+	@AxiosResponseExpose()
+	onibus?: number;
 
-  @Serialize.AxiosResponseExpose()
-  quota?: number
+	@AxiosResponseExpose()
+	quota?: number;
 
-  @Serialize.AxiosResponseExpose()
-  discount?: number
+	@AxiosResponseExpose()
+	discount?: number;
 }

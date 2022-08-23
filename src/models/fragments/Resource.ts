@@ -1,22 +1,21 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
+import { IResource } from '~src/models/interfaces/IResource';
 
-import {IResource} from '~src/models/interfaces/IResource'
-
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class Resource implements IResource {
-  @Serialize.AxiosExpose()
-  id?: string
+	@AxiosExpose()
+	id?: string;
 
-  @Serialize.AxiosExpose()
-  name?: string
+	@AxiosExpose()
+	name?: string;
 
-  @Serialize.AxiosExpose()
-  createAt?: string
+	@AxiosExpose()
+	createAt?: string;
 
-  @Serialize.AxiosExpose()
-  updatedAt?: string
+	@AxiosExpose()
+	updatedAt?: string;
 
-  get tag() {
-    return this.name
-  }
+	get tag() {
+		return this.name;
+	}
 }

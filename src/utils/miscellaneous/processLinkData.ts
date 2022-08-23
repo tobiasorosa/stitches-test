@@ -1,8 +1,7 @@
+import { OutboundLinkProps } from '~/src/components/Custom/OutboundLinkComponent';
 import { addParamsToURL } from '~/src/utils/addParamsToURL';
 import linkLocations from '~src/utils/linkLocations';
 import postsIds from '~src/utils/postsIds';
-
-import { OutboundLinkProps } from '../components/custom/OutboundLinkComponent';
 
 export const processLinkData = (
 	postIdOrPath: string,

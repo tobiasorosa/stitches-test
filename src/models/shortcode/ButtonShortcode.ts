@@ -1,9 +1,8 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer';
-
-import { processLinkData } from '~/src/utils/processLinkData';
+import { AxiosExclude } from '~/src/utils/axios-transformer/src';
+import { processLinkData } from '~/src/utils/miscellaneous/processLinkData';
 import { ProductLinkShortcode } from '~src/models/shortcode/ProductLinkShortcode';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ButtonShortcode extends ProductLinkShortcode {
 	readonly __tag: string = 'botao-produto';
 

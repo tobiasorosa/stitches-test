@@ -11,4 +11,24 @@ export declare global {
 	interface Window {
 		adsbygoogle: { [key: string]: unknown }[];
 	}
+	
+	interface List {
+		id?: string | number;
+		name?: string;
+	}
+
+	namespace JSX {
+		interface AmpImg {
+			alt?: string;
+			src?: string;
+			width?: string;
+			height?: string;
+			layout?: string;
+			margin?: string;
+			class?: string;
+		}
+		interface IntrinsicElements {
+			'amp-img': AmpImg;
+		}
+	}
 }

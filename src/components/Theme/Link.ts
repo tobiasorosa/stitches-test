@@ -15,15 +15,9 @@ export const Link = styled('a', {
 	},
 
 	variants: {
-		size: {
-			1: {
-				fontSize: '$1',
-			},
-			2: {
-				fontSize: '$2',
-			},
-			3: {
-				fontSize: '$3',
+		variant: {
+			underline: {
+				textDecoration: 'underline',
 			},
 		},
 	},

@@ -1,19 +1,19 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class OutboundLink {
-  @Serialize.AxiosExpose()
-  id?: string
+	@AxiosExpose()
+	id?: string;
 
-  @Serialize.AxiosExpose()
-  url?: string
+	@AxiosExpose()
+	url?: string;
 
-  @Serialize.AxiosExpose()
-  hasPartnership?: boolean
+	@AxiosExpose()
+	hasPartnership?: boolean;
 
-  @Serialize.AxiosExpose()
-  queryStringParamName?: string
+	@AxiosExpose()
+	queryStringParamName?: string;
 
-  @Serialize.AxiosExpose()
-  queryStringParamValue?: string
+	@AxiosExpose()
+	queryStringParamValue?: string;
 }

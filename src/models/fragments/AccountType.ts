@@ -1,10 +1,10 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude()
+@AxiosExclude()
 export class AccountType {
-  @Serialize.AxiosExpose()
-  id?: string
+	@AxiosExpose()
+	id?: string;
 
-  @Serialize.AxiosExpose()
-  name?: string
+	@AxiosExpose()
+	name?: string;
 }

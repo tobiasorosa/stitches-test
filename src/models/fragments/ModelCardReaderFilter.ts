@@ -1,33 +1,35 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
-import {axiosT} from '@dev-plus-plus/axios-transformer'
+import axiosT, {
+	AxiosExclude,
+	AxiosExpose,
+} from '~/src/utils/axios-transformer/src';
 
 export interface IResource {
-  id: string
-  name: string
+	id: string;
+	name: string;
 }
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ModelCardReaderFilter {
-  @Serialize.AxiosExpose()
-  flags?: IResource[]
+	@AxiosExpose()
+	flags?: IResource[];
 
-  @Serialize.AxiosExpose()
-  brands?: IResource[]
+	@AxiosExpose()
+	brands?: IResource[];
 
-  @Serialize.AxiosExpose()
-  connections?: IResource[]
+	@AxiosExpose()
+	connections?: IResource[];
 
-  @Serialize.AxiosExpose()
-  characteristics?: IResource[]
+	@AxiosExpose()
+	characteristics?: IResource[];
 
-  @Serialize.AxiosExpose()
-  profiles?: IResource[]
+	@AxiosExpose()
+	profiles?: IResource[];
 
-  static async fetchOne() {
-    return await axiosT
-      .get('/api/cardReader/filter-groups')
-      .withName('fetchOne@CardReader')
-      .as(ModelCardReaderFilter)
-      .fetchData()
-  }
+	static async fetchOne() {
+		return await axiosT
+			.get('/api/cardReader/filter-groups')
+			.withName('fetchOne@CardReader')
+			.as(ModelCardReaderFilter)
+			.fetchData();
+	}
 }

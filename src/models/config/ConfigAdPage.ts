@@ -1,10 +1,13 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import {
+	AxiosExclude,
+	AxiosExpose,
+	AxiosTransform,
+} from '~/src/utils/axios-transformer/src';
+import { ConfigAdItem } from '~src/models/fragments/ConfigAdItem';
 
-import {ConfigAdItem} from '~src/models/fragments/ConfigAdItem'
-
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ConfigAdPage {
-  @Serialize.AxiosExpose()
-  @Serialize.AxiosTransform(ConfigAdItem)
-  content?: ConfigAdItem[]
+	@AxiosExpose()
+	@AxiosTransform(ConfigAdItem)
+	content?: ConfigAdItem[];
 }

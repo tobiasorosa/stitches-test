@@ -1,23 +1,25 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
-import {axiosT} from '@dev-plus-plus/axios-transformer'
+import axiosT, {
+	AxiosExclude,
+	AxiosExpose,
+} from '~/src/utils/axios-transformer/src';
 
-import {ConfigAdPosition} from '~src/models/fragments/ConfigAdPosition'
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+import { ConfigAdPosition } from '~src/models/fragments/ConfigAdPosition';
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ConfigAd {
-  @Serialize.AxiosExpose()
-  Post?: ConfigAdPosition
+	@AxiosExpose()
+	Post?: ConfigAdPosition;
 
-  @Serialize.AxiosExpose()
-  Calculadora?: ConfigAdPosition
+	@AxiosExpose()
+	Calculadora?: ConfigAdPosition;
 
-  @Serialize.AxiosExpose()
-  Tabela?: ConfigAdPosition
+	@AxiosExpose()
+	Tabela?: ConfigAdPosition;
 
-  static async fetchOne() {
-    return await axiosT
-      .get(`${process.env.NEXT_PUBLIC_CONFIG_BASE_URL}/page_ads_v2.json`)
-      .withName('fetchOne@ConfigAd')
-      .as(ConfigAd)
-      .fetchData()
-  }
+	static async fetchOne() {
+		return await axiosT
+			.get(`${process.env.NEXT_PUBLIC_CONFIG_BASE_URL}/page_ads_v2.json`)
+			.withName('fetchOne@ConfigAd')
+			.as(ConfigAd)
+			.fetchData();
+	}
 }

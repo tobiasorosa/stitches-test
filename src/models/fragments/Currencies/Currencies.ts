@@ -1,43 +1,43 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class Currencies {
-  @Serialize.AxiosExpose('USD')
-  USD?: number
+	@AxiosExpose('USD')
+	USD?: number;
 
-  @Serialize.AxiosExpose('BRL')
-  BRL?: number
+	@AxiosExpose('BRL')
+	BRL?: number;
 
-  @Serialize.AxiosExpose('EUR')
-  EUR?: number
+	@AxiosExpose('EUR')
+	EUR?: number;
 
-  @Serialize.AxiosExpose('GBP')
-  GBP?: number
+	@AxiosExpose('GBP')
+	GBP?: number;
 
-  @Serialize.AxiosExpose('CAD')
-  CAD?: number
+	@AxiosExpose('CAD')
+	CAD?: number;
 
-  @Serialize.AxiosExpose('AUD')
-  AUD?: number
+	@AxiosExpose('AUD')
+	AUD?: number;
 
-  @Serialize.AxiosExpose('NZD')
-  NZD?: number
+	@AxiosExpose('NZD')
+	NZD?: number;
 
-  @Serialize.AxiosExpose('JPY')
-  JPY?: number
+	@AxiosExpose('JPY')
+	JPY?: number;
 
-  @Serialize.AxiosExpose('CNY')
-  CNY?: number
+	@AxiosExpose('CNY')
+	CNY?: number;
 
-  @Serialize.AxiosExpose('CHF')
-  CHF?: number
+	@AxiosExpose('CHF')
+	CHF?: number;
 
-  @Serialize.AxiosExpose('ARS')
-  ARS?: number
+	@AxiosExpose('ARS')
+	ARS?: number;
 
-  @Serialize.AxiosExpose('CLP')
-  CLP?: number
+	@AxiosExpose('CLP')
+	CLP?: number;
 
-  @Serialize.AxiosExpose('MXN')
-  MXN?: number
+	@AxiosExpose('MXN')
+	MXN?: number;
 }

@@ -5,14 +5,29 @@ export const Text = styled('p', {
 
 	variants: {
 		size: {
-			1: {
-				fontSize: '$1',
+			xs: {
+				fontSize: '$xs',
 			},
-			2: {
-				fontSize: '$2',
+			sm: {
+				fontSize: '$sm',
 			},
-			3: {
-				fontSize: '$3',
+			md: {
+				fontSize: '$md',
+			},
+			lg: {
+				fontSize: '$lg',
+			},
+			xl: {
+				fontSize: '$xl',
+			},
+			'2xl': {
+				fontSize: '$2xl',
+			},
+			'3xl': {
+				fontSize: '$3xl',
+			},
+			'4xl': {
+				fontSize: '$4xl',
 			},
 		},
 
@@ -44,6 +59,47 @@ export const Text = styled('p', {
 				textTransform: 'uppercase',
 				fontSize: '$xs',
 				marginBottom: '0.5rem',
+			},
+
+			text1Regular: {
+				fontSize: '2xl',
+				fontWeight: 400,
+			},
+			text1Bold: {
+				fontSize: '2xl',
+				fontWeight: 700,
+			},
+			botom1SemiBold: {
+				fontSize: '2xl',
+				fontWeight: 600,
+			},
+			botom2SemiBold: {
+				fontSize: 'md',
+				fontWeight: 600,
+				textTransform: 'uppercase',
+			},
+			text2Regular: {
+				fontSize: 'md',
+				fontWeight: 400,
+			},
+			text2Bold: {
+				fontSize: 'md',
+				fontWeight: 700,
+			},
+			linkBold: {
+				fontSize: 'md',
+				fontWeight: 700,
+			},
+			text2SemiBoldItalic: {
+				fontSize: '2xl',
+				fontWeight: 600,
+				fontStyle: 'italic',
+			},
+			smallBoldLink: {
+				fontSize: 'xs',
+				fontWeight: 700,
+				textDecoration: 'underline',
+				cursor: 'pointer',
 			},
 		},
 	},

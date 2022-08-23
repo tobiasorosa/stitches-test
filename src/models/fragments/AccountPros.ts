@@ -1,19 +1,18 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
+import { IResource } from '~src/models/interfaces/IResource';
 
-import {IResource} from '~src/models/interfaces/IResource'
-
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class AccountPros implements IResource {
-  @Serialize.AxiosExpose()
-  id?: string
+	@AxiosExpose()
+	id?: string;
 
-  @Serialize.AxiosExpose()
-  accountId?: string
+	@AxiosExpose()
+	accountId?: string;
 
-  @Serialize.AxiosExpose('descricao')
-  description?: string
+	@AxiosExpose('descricao')
+	description?: string;
 
-  get tag() {
-    return this.id
-  }
+	get tag() {
+		return this.id;
+	}
 }

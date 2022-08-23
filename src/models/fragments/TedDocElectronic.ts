@@ -1,10 +1,10 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude()
+@AxiosExclude()
 export class TedDocElectronic {
-  @Serialize.AxiosExpose()
-  coin?: number
+	@AxiosExpose()
+	coin?: number;
 
-  @Serialize.AxiosExpose()
-  freeOccurrence?: number
+	@AxiosExpose()
+	freeOccurrence?: number;
 }

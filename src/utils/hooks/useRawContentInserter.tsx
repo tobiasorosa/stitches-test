@@ -2,7 +2,7 @@ import parser from 'html-react-parser';
 import React from 'react';
 import { Box } from '~/src/components/Theme';
 
-import { ModelCustomAd } from '~src/models/guttenberg/ModelCustomAd';
+import { ModelCustomAd } from '~src/models/gutenberg/ModelCustomAd';
 import {
 	convertWpShortcode,
 	extractWpBlocks,

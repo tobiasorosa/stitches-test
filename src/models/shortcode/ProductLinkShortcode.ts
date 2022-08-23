@@ -1,9 +1,11 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer';
-import { axiosT } from '@dev-plus-plus/axios-transformer';
 import { plainToClass } from 'class-transformer';
 import { compact, uniq } from 'lodash';
+import axiosT, {
+	AxiosExclude,
+	AxiosResponseExpose,
+} from '~/src/utils/axios-transformer/src';
 
-import { processLinkData } from '~/src/utils/processLinkData';
+import { processLinkData } from '~/src/utils/miscellaneous/processLinkData';
 import { Product } from '~src/models/fragments/Product';
 import { IShortcode } from '~src/models/interfaces/IShortcode';
 import {
@@ -12,7 +14,7 @@ import {
 	Shortcode,
 } from '~src/utils/wordpress';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ProductLinkShortcode implements IShortcode {
 	readonly __tag: string = 'link-produto';
 
@@ -52,13 +54,13 @@ export class ProductLinkShortcode implements IShortcode {
 		this.product = pool.find(it => it.id === this.id);
 	}
 
-	@Serialize.AxiosResponseExpose('ancora')
+	@AxiosResponseExpose('ancora')
 	label?: string;
 
-	@Serialize.AxiosResponseExpose()
+	@AxiosResponseExpose()
 	id?: string;
 
-	@Serialize.AxiosResponseExpose()
+	@AxiosResponseExpose()
 	product?: Product;
 
 	/**

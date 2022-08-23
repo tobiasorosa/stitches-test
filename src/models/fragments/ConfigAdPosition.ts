@@ -1,18 +1,17 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
+import { ConfigAdItem } from '~src/models/fragments/ConfigAdItem';
 
-import {ConfigAdItem} from '~src/models/fragments/ConfigAdItem'
-
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ConfigAdPosition {
-  @Serialize.AxiosExpose('content')
-  content?: ConfigAdItem[]
+	@AxiosExpose('content')
+	content?: ConfigAdItem[];
 
-  @Serialize.AxiosExpose('topSidebar')
-  topSidebar?: ConfigAdItem
+	@AxiosExpose('topSidebar')
+	topSidebar?: ConfigAdItem;
 
-  @Serialize.AxiosExpose('bottomSidebar')
-  bottomSidebar?: ConfigAdItem
+	@AxiosExpose('bottomSidebar')
+	bottomSidebar?: ConfigAdItem;
 
-  @Serialize.AxiosExpose('result')
-  result?: ConfigAdItem
+	@AxiosExpose('result')
+	result?: ConfigAdItem;
 }

@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 import { processLinkData } from '~/src/utils/miscellaneous/processLinkData';
 import { OutboundLink } from '~src/models/fragments/OutboundLink';
+import { Link } from '../Theme';
 
 export interface OutboundLinkProps {
 	postID?: string;
@@ -12,14 +13,11 @@ export interface OutboundLinkProps {
 	linkLocationName: string;
 	outboundLink?: OutboundLink;
 	isAmp?: boolean;
+	variant?: string;
+	children?: React.ReactNode;
 }
 
-export interface OutboundLinkComponentProps
-	extends ThemingProps<'Link'>,
-		LinkProps,
-		OutboundLinkProps {}
-
-export const OutboundLinkComponent = (props: OutboundLinkComponentProps) => {
+export const OutboundLinkComponent = (props: OutboundLinkProps) => {
 	const {
 		children,
 		variant,
@@ -32,7 +30,6 @@ export const OutboundLinkComponent = (props: OutboundLinkComponentProps) => {
 		isAmp,
 		...rest
 	} = props;
-	const styles = useStyleConfig('OutboundLink', { variant });
 
 	const isAmpFromHook = useAmp();
 	const { pathname, asPath } = useRouter();
@@ -61,7 +58,6 @@ export const OutboundLinkComponent = (props: OutboundLinkComponentProps) => {
 			rel={rel}
 			href={outboundLink?.hasPartnership ? url : adRedirectUrl}
 			target={'_blank'}
-			sx={styles}
 			data-testid={`idin-outbound-link__${productId}`}
 			{...rest}
 		>

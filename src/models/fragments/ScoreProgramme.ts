@@ -1,13 +1,13 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ScoreProgramme {
-  @Serialize.AxiosExpose('valores')
-  values?: string
+	@AxiosExpose('valores')
+	values?: string;
 
-  @Serialize.AxiosExpose('valor')
-  amount?: number
+	@AxiosExpose('valor')
+	amount?: number;
 
-  @Serialize.AxiosExpose('ativo')
-  active?: boolean
+	@AxiosExpose('ativo')
+	active?: boolean;
 }

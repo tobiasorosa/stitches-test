@@ -1,19 +1,19 @@
-import * as Serialize from '@dev-plus-plus/axios-transformer'
+import { AxiosExclude, AxiosExpose } from '~/src/utils/axios-transformer/src';
 
-@Serialize.AxiosExclude() // Excludes all fields unless otherwise specified
+@AxiosExclude() // Excludes all fields unless otherwise specified
 export class ValuesArray {
-  @Serialize.AxiosExpose('data')
-  date?: string
+	@AxiosExpose('data')
+	date?: string;
 
-  @Serialize.AxiosExpose('dataFim')
-  endDate?: string | null
+	@AxiosExpose('dataFim')
+	endDate?: string | null;
 
-  @Serialize.AxiosExpose('valor')
-  value?: string
+	@AxiosExpose('valor')
+	value?: string;
 
-  @Serialize.AxiosExpose('acumuladoAno')
-  yearAccumulated?: string
+	@AxiosExpose('acumuladoAno')
+	yearAccumulated?: string;
 
-  @Serialize.AxiosExpose('acumulado12Meses')
-  twelveMonthsAccumulated?: string
+	@AxiosExpose('acumulado12Meses')
+	twelveMonthsAccumulated?: string;
 }
