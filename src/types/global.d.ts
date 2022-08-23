@@ -7,4 +7,8 @@ export declare global {
 		genericCallProducts?: JsonData[];
 		related?: WP.Noticia[] | WP.Calculadora[] | WP.Tabela[] | WP.Post[];
 	}
+	
+	interface Window {
+		adsbygoogle: { [key: string]: unknown }[];
+	}
 }

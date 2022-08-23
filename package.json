@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "@dev-plus-plus/axios-transformer": "^1.0.1",
     "@stitches/react": "^1.2.8",
     "class-transformer": "^0.5.1",
     "date-fns": "^2.29.1",
     "formik": "^2.2.9",
     "graphql": "^16.5.0",
+    "html-react-parser": "^3.0.4",
     "isomorphic-dompurify": "^0.20.0",
     "next": "12.2.3",
     "react": "18.2.0",

@@ -38,6 +38,13 @@ export const Text = styled('p', {
 					marginBottom: '1rem',
 				},
 			},
+
+			'before-ad': {
+				textAlign: 'center',
+				textTransform: 'uppercase',
+				fontSize: '$xs',
+				marginBottom: '0.5rem',
+			},
 		},
 	},
 });
