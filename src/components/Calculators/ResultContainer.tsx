@@ -1,6 +1,6 @@
 import { useFormikContext } from 'formik';
 import { useContext } from 'react';
-import { Button, Stack } from '../Theme';
+import { Box, Button, Stack, VStack } from '../Theme';
 import { Context, ContextCalculator } from './Context';
 
 interface ResultContainerProps {
@@ -11,6 +11,8 @@ export const ResultContainer = ({ children }: ResultContainerProps) => {
 	const { value, setTrue, setFalse } = useContext(ContextCalculator);
 	const { customFieldCalculator } = useContext(Context);
 	const { isValid, dirty } = useFormikContext();
+
+	console.log(value);
 	return (
 		<>
 			<Stack
@@ -41,6 +43,38 @@ export const ResultContainer = ({ children }: ResultContainerProps) => {
 				>
 					Calcular
 				</Button>
+			</Stack>
+
+			<Stack
+				css={{
+					display: `${value ? '' : 'none'}`,
+				}}
+			>
+				{customFieldCalculator?.conteudoCalcularResultado && (
+					<Box
+						css={{
+							marginBottom: '5px',
+						}}
+						dangerouslySetInnerHTML={{
+							__html: customFieldCalculator?.conteudoCalcularResultado,
+						}}
+					/>
+				)}
+
+				<VStack data-testid={'result-table-calculator'} css={{ width: '100%' }}>
+					{children}
+				</VStack>
+
+				{customFieldCalculator?.conteudoResultadoAnuncio && (
+					<Box
+						css={{
+							marginTop: '1.25rem',
+						}}
+						dangerouslySetInnerHTML={{
+							__html: customFieldCalculator?.conteudoResultadoAnuncio,
+						}}
+					/>
+				)}
 			</Stack>
 		</>
 	);

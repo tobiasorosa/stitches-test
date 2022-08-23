@@ -40,9 +40,17 @@ export const { styled, getCssText, globalCss } = createStitches({
 			marginLeft: value,
 			marginRight: value,
 		}),
+		marginY: (value: number | string) => ({
+			marginTop: value,
+			marginBottom: value,
+		}),
 		paddingX: (value: number | string) => ({
 			paddingLeft: value,
 			paddingRight: value,
+		}),
+		paddingY: (value: number | string) => ({
+			paddingTop: value,
+			paddingBottom: value,
 		}),
 	},
 });

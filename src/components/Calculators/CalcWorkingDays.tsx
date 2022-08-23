@@ -5,7 +5,20 @@ import CalculatorWorkingDays, {
 } from '~src/tools/calculators/calcWorkingDays';
 import { useContext } from './Context';
 import { date, object, ref } from 'yup';
-import { Box, Container, Grid, Heading, Stack, VStack } from '../Theme';
+import {
+	Box,
+	Container,
+	Grid,
+	Heading,
+	Stack,
+	Table,
+	Tbody,
+	Td,
+	Th,
+	Thead,
+	Tr,
+	VStack,
+} from '../Theme';
 import { Form, Formik } from 'formik';
 import { FormField } from '../Utils/Forms/FormField';
 import { registerLocale } from 'react-datepicker';
@@ -15,6 +28,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { SVGAddon } from './Addons';
 import { DatePickerDynamic } from '../Utils/Calculators/DynamicDatepicker';
 import { ResultContainer } from './ResultContainer';
+import { CalculatorContainer } from './CalculatorContainer';
 
 registerLocale('pt', pt);
 
@@ -52,7 +66,7 @@ export const CalcWorkingDays: React.FC = () => {
 	});
 
 	return (
-		<Container variant='calculator-form'>
+		<CalculatorContainer>
 			<Formik<InputWorkingDays>
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
@@ -127,12 +141,58 @@ export const CalcWorkingDays: React.FC = () => {
 								</Box>
 							</Grid>
 							<ResultContainer>
-								<Stack>Teste</Stack>
+								<VStack>
+									<Heading as={'h2'} size={'xl'}>
+										Resultado
+									</Heading>
+
+									<Table>
+										<Thead>
+											<Tr>
+												<Th>Descrição</Th>
+
+												<Th variant='numeric'>Dias</Th>
+											</Tr>
+										</Thead>
+
+										<Tbody>
+											<Tr>
+												<Td>Dias úteis</Td>
+
+												<Td variant='numeric'>{resultsTable.workingDays}</Td>
+											</Tr>
+
+											<Tr>
+												<Td>Dias corridos</Td>
+
+												<Td variant='numeric'>{resultsTable.days}</Td>
+											</Tr>
+
+											<Tr>
+												<Td>Sábados</Td>
+
+												<Td variant='numeric'>{resultsTable.saturdays}</Td>
+											</Tr>
+
+											<Tr>
+												<Td>Domingos</Td>
+
+												<Td variant='numeric'>{resultsTable.sundays}</Td>
+											</Tr>
+
+											<Tr>
+												<Td>Feriados nacionais</Td>
+
+												<Td variant='numeric'>{resultsTable.holidays}</Td>
+											</Tr>
+										</Tbody>
+									</Table>
+								</VStack>
 							</ResultContainer>
 						</VStack>
 					</Form>
 				)}
 			</Formik>
-		</Container>
+		</CalculatorContainer>
 	);
 };

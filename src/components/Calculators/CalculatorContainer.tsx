@@ -4,11 +4,11 @@ import useBoolean from '~/src/utils/hooks/useBoolean';
 import { Box, Stack } from '../Theme';
 import { Context, ContextCalculator } from './Context';
 
-interface ContainerProps {
+interface CalculatorContainerProps {
 	children: React.ReactElement | React.ReactElement[];
 }
 
-export const Container = ({ children }: ContainerProps) => {
+export const CalculatorContainer = ({ children }: CalculatorContainerProps) => {
 	const { value, setTrue, setFalse } = useBoolean();
 	const { meta, customFieldCalculator } = useContext(Context);
 
@@ -25,7 +25,7 @@ export const Container = ({ children }: ContainerProps) => {
 
 	return (
 		<ContextCalculator.Provider value={state}>
-			<Stack>
+			<Stack variant='calculator-form'>
 				{children}
 
 				{/* {flag && !isIframe && (
