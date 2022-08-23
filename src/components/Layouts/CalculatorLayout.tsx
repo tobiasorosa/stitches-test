@@ -16,6 +16,8 @@ import {
 	Context,
 	ContextProps,
 } from '~src/components/Calculators/Context';
+import { WpContent } from '../App/WpContent';
+import { Adsense } from '../Custom/Adsense';
 
 interface CalculatorLayoutProps {
 	data: Calculadora;
@@ -76,25 +78,25 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 							</LayoutArea.Content>
 
 							<LayoutArea.Sidebar>
-								{/* <Adsense
+								<Adsense
 									slot={meta?.configAd?.Calculadora?.topSidebar?.id_block}
 									format={'vertical'}
-								/> */}
+								/>
 							</LayoutArea.Sidebar>
 						</LayoutArea>
 
 						<LayoutArea>
 							<LayoutArea.Content>
-								{/* <WpContent html={data?.content ?? ''} meta={meta} /> */}
+								<WpContent html={data?.content ?? ''} meta={meta} />
 
 								{/* <CardRelatedContentSimulate /> */}
 							</LayoutArea.Content>
 
 							<LayoutArea.Sidebar>
-								{/* <Adsense
+								<Adsense
 									slot={meta?.configAd?.Calculadora?.bottomSidebar?.id_block}
 									format={'vertical'}
-								/> */}
+								/>
 							</LayoutArea.Sidebar>
 						</LayoutArea>
 					</Stack>
