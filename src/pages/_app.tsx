@@ -1,5 +1,7 @@
 import type { AppProps } from 'next/app';
 import { globalCss } from '~/src/styles/stitches.config';
+import 'reflect-metadata';
+import { wpStyle } from '../styles/wpStyle';
 
 const globalStyles = globalCss({
 	'*': {
@@ -41,9 +43,6 @@ const globalStyles = globalCss({
 		maxWidth: '100%',
 		height: 'auto',
 	},
-	'ul, ol': {
-		listStylePosition: 'inside',
-	},
 	fieldset: {
 		minWidth: 0,
 		padding: 0,
@@ -73,6 +72,7 @@ const globalStyles = globalCss({
 			background: '#E5EFFF',
 		},
 	},
+	...wpStyle,
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

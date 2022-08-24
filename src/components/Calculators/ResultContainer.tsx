@@ -12,7 +12,6 @@ export const ResultContainer = ({ children }: ResultContainerProps) => {
 	const { customFieldCalculator } = useContext(Context);
 	const { isValid, dirty } = useFormikContext();
 
-	console.log(value);
 	return (
 		<>
 			<Stack
