@@ -1,3 +1,4 @@
+import { CSS } from '@stitches/react';
 import React, { useEffect } from 'react';
 
 import { useScript } from '~src/utils/hooks/useScript';
@@ -10,6 +11,7 @@ export interface AdsenseProps {
 	showInfo?: boolean;
 	fullWithResponsive?: boolean;
 	customClass?: string;
+	css?: CSS;
 }
 
 export function Adsense(props: AdsenseProps) {
@@ -20,6 +22,7 @@ export function Adsense(props: AdsenseProps) {
 		customClass,
 		showInfo = false,
 		fullWithResponsive = true,
+		css,
 		...rest
 	} = props;
 
@@ -34,7 +37,7 @@ export function Adsense(props: AdsenseProps) {
 	}, []);
 
 	return (
-		<Box {...rest}>
+		<Box css={css}>
 			{showInfo && <Text variant='before-ad'>CONTINUA APÓS A PUBLICIDADE</Text>}
 
 			<Box>

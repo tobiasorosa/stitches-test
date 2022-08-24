@@ -11,6 +11,10 @@ const nextConfig = {
 
 		return config;
 	},
+
+	images: {
+		domains: ['www.idinheiro.com.br'],
+	},
 };
 
 module.exports = nextConfig;

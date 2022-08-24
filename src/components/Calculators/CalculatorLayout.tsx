@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import { useMemo } from 'react';
 import { Calculadora } from '~/src/types/wp-graphql';
 
@@ -10,7 +9,7 @@ import { Container } from '../Theme/Container';
 import Navbar from '../Utils/Header/Navbar';
 import { Box, Stack, Text } from '../Theme';
 import Breadcrumb from '../Utils/Header/Breadcrumb';
-import { LayoutArea } from '~src/components/Layouts/LayoutArea';
+import { LayoutArea } from '~/src/components/Calculators/LayoutArea';
 import {
 	// CardRelatedContentSimulate,
 	Context,
@@ -18,6 +17,7 @@ import {
 } from '~src/components/Calculators/Context';
 import { WpContent } from '../App/WpContent';
 import { Adsense } from '../Custom/Adsense';
+import { CardRelatedContentSimulate } from '../Custom/CardRelatedContentSimulate';
 
 interface CalculatorLayoutProps {
 	data: Calculadora;
@@ -65,7 +65,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 										flexDirection: 'column',
 									}}
 								>
-									<Heading variant='title'>{data.title}</Heading>
+									<Heading variant='main'>{data.title}</Heading>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (
@@ -89,7 +89,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 							<LayoutArea.Content>
 								<WpContent html={data?.content ?? ''} meta={meta} />
 
-								{/* <CardRelatedContentSimulate /> */}
+								<CardRelatedContentSimulate />
 							</LayoutArea.Content>
 
 							<LayoutArea.Sidebar>

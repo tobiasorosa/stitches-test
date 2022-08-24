@@ -1,7 +1,7 @@
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import { CalcWorkingDays } from '~/src/components/Calculators/CalcWorkingDays';
-import CalculatorLayout from '~/src/components/Layouts/CalculatorLayout';
+import CalculatorLayout from '~/src/components/Calculators/CalculatorLayout';
 import { GET_CALCULATOR } from '~/src/queries/get_calculator';
 import {
 	Calculadora,

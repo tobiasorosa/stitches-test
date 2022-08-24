@@ -1,7 +1,8 @@
 import { styled } from '~/src/styles/stitches.config';
 
 export const Heading = styled('h1', {
-	color: '$primary-gray',
+	display: 'inline',
+	color: '#2D3748',
 
 	defaultVariants: {
 		size: '4xl',
@@ -9,13 +10,47 @@ export const Heading = styled('h1', {
 
 	variants: {
 		variant: {
-			title: {
-				fontWeight: 600,
-				color: '#2D3748',
-				display: 'inline',
-				backgroundImage:
-					'linear-gradient(to top, #e5efff 35%, transparent 35%)',
+			main: {
+				bgGradient: 'linear(to-t, #e5efff 35%, transparent 35%)',
 				textTransform: 'uppercase',
+				fontWeight: 600,
+				fontSize: '$4xl',
+				lineHeight: '45px',
+
+				'@sm': {
+					fontSize: '$2xl',
+					lineHeight: '36px',
+				},
+				'@md': {
+					fontSize: '$3xl',
+					lineHeight: '45px',
+				},
+				'@lg': {
+					fontSize: '$3xl',
+					lineHeight: '45px',
+				},
+			},
+			title: {
+				fontSize: '$2xl',
+			},
+			subtitle: {
+				fontSize: '$xl',
+			},
+			title1Bold: {
+				fontSize: '$6xl',
+				fontWeight: 700,
+			},
+			title2Bold: {
+				fontSize: '$5xl',
+				fontWeight: 700,
+			},
+			subtitle1SemiBold: {
+				fontSize: '$4xl',
+				fontWeight: 600,
+			},
+			subtitle2SemiBold: {
+				fontSize: '$2xl',
+				fontWeight: 600,
 			},
 		},
 

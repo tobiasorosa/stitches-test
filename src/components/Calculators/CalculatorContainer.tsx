@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import useBoolean from '~/src/utils/hooks/useBoolean';
+import { Adsense } from '../Custom/Adsense';
 import { Box, Stack } from '../Theme';
 import { Context, ContextCalculator } from './Context';
 
@@ -28,16 +29,18 @@ export const CalculatorContainer = ({ children }: CalculatorContainerProps) => {
 			<Stack variant='calculator-form'>
 				{children}
 
-				{/* {flag && !isIframe && (
-          <Adsense
-            mt={8}
-            mx={'auto'}
-            slot={slot}
-            w={'full'}
-            height={'320px'}
-            format={'auto'}
-          />
-        )} */}
+				{value && !isIframe && (
+					<Adsense
+						slot={slot}
+						css={{
+							marginTop: '2rem',
+							marginX: 'auto',
+							width: '100%',
+							height: '320px',
+						}}
+						format={'auto'}
+					/>
+				)}
 
 				{customFieldCalculator?.conteudoComplementar && !value && !isIframe && (
 					<Box
