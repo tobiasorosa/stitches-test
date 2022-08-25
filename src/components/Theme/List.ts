@@ -14,3 +14,5 @@ export const ListItem = styled('li', {
 		verticalAlign: 'middle',
 	},
 });
+
+export const List = styled('ul', {});

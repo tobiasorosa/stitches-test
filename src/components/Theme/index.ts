@@ -11,7 +11,7 @@ export * from './HStack';
 export * from './Input';
 export * from './Label';
 export * from './Link';
-export * from './ListItem';
+export * from './List';
 export * from './Stack';
 export * from './Table';
 export * from './Text';

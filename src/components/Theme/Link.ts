@@ -19,6 +19,19 @@ export const Link = styled('a', {
 			underline: {
 				textDecoration: 'underline',
 			},
+
+			'social-link': {
+				position: 'relative',
+				width: '2rem',
+				height: '2rem',
+				borderRadius: '50%',
+				color: 'white',
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				fontSize: '1.25rem',
+				backgroundColor: '#373737',
+			},
 		},
 	},
 });

@@ -3,7 +3,7 @@ import { createStitches } from '@stitches/react';
 export const { styled, getCssText, globalCss } = createStitches({
 	theme: {
 		fonts: {
-			default: 'Overpass',
+			default: 'Overpass,Trebuchet MS,Helvetica,Arial,sans-serif',
 		},
 		colors: {
 			primary: '#4065ff',

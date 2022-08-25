@@ -26,9 +26,9 @@ const NavbarOptionsItems: React.FC<NavbarOptionsItemsProps> = props => {
 								key={childItem.id}
 								id={`menu_item_${childItemName}`}
 								href={childItem.url}
-								size={1}
 								css={{
 									marginTop: '0.5rem',
+									fontSize: '$sm',
 								}}
 							>
 								{childItem.label}

@@ -6,9 +6,9 @@ import { FooterItem } from '~/src/utils/processFooter';
 import { MenuItem } from '~src/utils/processMegaMenu';
 import { Heading } from '../Theme';
 import { Container } from '../Theme/Container';
-import Navbar from '../Utils/Header/Navbar';
+import Navbar from '../App/Header/Navbar';
 import { Box, Stack, Text } from '../Theme';
-import Breadcrumb from '../Utils/Header/Breadcrumb';
+import Breadcrumb from '../App/Header/Breadcrumb';
 import { LayoutArea } from '~/src/components/Calculators/LayoutArea';
 import {
 	// CardRelatedContentSimulate,
@@ -18,6 +18,7 @@ import {
 import { WpContent } from '../App/WpContent';
 import { Adsense } from '../Custom/Adsense';
 import { CardRelatedContentSimulate } from '../Custom/CardRelatedContentSimulate';
+import { Footer } from '../App/Footer/Footer';
 
 interface CalculatorLayoutProps {
 	data: Calculadora;
@@ -102,7 +103,7 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 					</Stack>
 				</Container>
 
-				{/* <Footer data={footerData} /> */}
+				<Footer data={footerData} />
 			</Box>
 		</Context.Provider>
 	);
