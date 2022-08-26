@@ -3,10 +3,7 @@ import { styled } from '~/src/styles/stitches.config';
 export const Heading = styled('h1', {
 	display: 'inline',
 	color: '#2D3748',
-
-	defaultVariants: {
-		size: '4xl',
-	},
+	fontSize: '$4xl',
 
 	variants: {
 		variant: {

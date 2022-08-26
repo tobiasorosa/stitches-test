@@ -56,9 +56,8 @@ const Navbar: React.FC<NavbarProps> = props => {
 
 								<Box
 									css={{
-										'@base': {
-											display: 'none',
-										},
+										display: 'none',
+
 										'@lg': {
 											display: 'block',
 										},

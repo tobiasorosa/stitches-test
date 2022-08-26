@@ -72,7 +72,11 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 										flexDirection: 'column',
 									}}
 								>
-									<Heading variant='main'>{data.title}</Heading>
+									<Heading>
+										<Heading variant='main' as='span'>
+											{data.title}
+										</Heading>
+									</Heading>
 								</Stack>
 
 								{data.customFieldCalculadoras?.subtituloCalculadora && (

@@ -40,7 +40,7 @@ export const Stack = styled('div', {
 
 			'calculator-form': {
 				padding: '0.75rem',
-				paddingInline: 0,
+				paddingInline: '1rem',
 				marginTop: '2rem',
 				border: '1px solid #E2E8F0',
 				borderRadius: 8,
