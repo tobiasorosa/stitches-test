@@ -15,7 +15,12 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
 					return (
 						it?.url &&
 						it.text && (
-							<ListItem key={it.url}>
+							<ListItem
+								key={it.url}
+								css={{
+									display: 'inline-flex',
+								}}
+							>
 								<Link
 									href={it?.url}
 									css={{

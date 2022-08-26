@@ -71,11 +71,11 @@ const Navbar: React.FC<NavbarProps> = props => {
 							<HStack
 								css={{
 									justifyContent: 'space-between',
-									display: 'inline-flex', //BASE NONE
+									display: 'none',
 									marginTop: '2rem',
 
-									'@base': {
-										display: 'none',
+									'@lg': {
+										display: 'inline-flex',
 									},
 								}}
 							>

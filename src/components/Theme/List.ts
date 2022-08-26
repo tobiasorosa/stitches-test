@@ -1,7 +1,6 @@
 import { styled } from '~/src/styles/stitches.config';
 
 export const ListItem = styled('li', {
-	display: 'inline-flex',
 	alignItems: 'center',
 
 	'& svg': {
@@ -13,6 +12,27 @@ export const ListItem = styled('li', {
 		color: '#718096',
 		verticalAlign: 'middle',
 	},
+
+	variants: {
+		variant: {
+			'footer-list': {
+				marginBottom: '0.5rem',
+			},
+		},
+	},
 });
 
-export const List = styled('ul', {});
+export const List = styled('ul', {
+	listStyleType: 'none',
+
+	variants: {
+		variant: {
+			'footer-list': {
+				display: 'flex',
+				flexWrap: 'wrap',
+				flexDirection: 'column',
+				width: '100%',
+			},
+		},
+	},
+});

@@ -11,22 +11,19 @@ export const Heading = styled('h1', {
 	variants: {
 		variant: {
 			main: {
-				bgGradient: 'linear(to-t, #e5efff 35%, transparent 35%)',
+				backgroundImage:
+					'linear-gradient(to top, #e5efff 35%, transparent 35%)',
 				textTransform: 'uppercase',
 				fontWeight: 600,
-				fontSize: '$4xl',
+				fontSize: '$2xl',
 				lineHeight: '45px',
 
-				'@sm': {
-					fontSize: '$2xl',
-					lineHeight: '36px',
-				},
 				'@md': {
 					fontSize: '$3xl',
 					lineHeight: '45px',
 				},
 				'@lg': {
-					fontSize: '$3xl',
+					fontSize: '$4xl',
 					lineHeight: '45px',
 				},
 			},

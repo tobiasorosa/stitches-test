@@ -15,6 +15,7 @@ import {
 	Link,
 	List,
 	ListItem,
+	Separator,
 	Stack,
 	Text,
 	VStack,
@@ -62,7 +63,11 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 	};
 
 	return (
-		<Box>
+		<Box
+			css={{
+				marginTop: '2rem',
+			}}
+		>
 			<Box
 				css={{
 					paddingY: '2rem',
@@ -72,37 +77,36 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 				<Container>
 					<VStack
 						css={{
-							alignItems: 'flex-start',
-							flexDirection: 'row',
+							alignItems: 'center',
+							flexDirection: 'column',
 
 							'@lg': {
-								alignItems: 'center',
-								flexDirection: 'column',
+								alignItems: 'flex-start',
 							},
 						}}
 					>
 						<Stack
 							css={{
 								flex: 1,
-								alignItems: 'flex-start',
-								flexDirection: 'row',
+								alignItems: 'center',
+								flexDirection: 'column',
 								width: '100%',
 								justifyContent: 'space-between',
 
 								'@lg': {
-									alignItems: 'center',
-									flexDirection: 'column',
+									alignItems: 'flex-start',
+									flexDirection: 'row',
 								},
 							}}
 						>
 							<Stack
 								css={{
-									flexDirection: 'row',
+									flexDirection: 'column',
 									alignItems: 'center',
 									gridGap: '10px',
 
 									'@lg': {
-										flexDirection: 'column',
+										flexDirection: 'row',
 									},
 								}}
 							>
@@ -114,6 +118,7 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 
 								<Box
 									css={{
+										marginTop: '0.5rem',
 										'@lg': {
 											padding: '0.5rem',
 											borderLeft: '1px solid',
@@ -123,6 +128,7 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 									<Text
 										css={{
 											fontSize: '12px',
+											marginY: 'auto',
 										}}
 									>
 										TUDO O QUE IMPORTA PARA O SEU DINHEIRO.
@@ -130,7 +136,15 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 								</Box>
 							</Stack>
 
-							<HStack>
+							<HStack
+								css={{
+									gridGap: '10px',
+
+									'@base': {
+										marginTop: '0.5rem',
+									},
+								}}
+							>
 								<SocialLink
 									href={'https://www.instagram.com/idinheiro/'}
 									label={'instagram'}
@@ -193,23 +207,34 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 							</HStack>
 						</Stack>
 
-						<Box
+						<Separator
 							style={{
-								width: '100%',
 								border: '1px solid #0071ff',
 								backgroundColor: '#0071ff',
+								marginTop: '2rem',
 							}}
 						/>
 
 						<Stack
 							css={{
 								width: '100%',
-								alignItems: 'flex-start',
-								flexDirection: 'row',
+								alignItems: 'center',
+								flexDirection: 'column',
+								marginTop: '2rem',
+
+								'@base': {
+									'&>*:not(style)~*:not(style)': {
+										marginTop: '2rem',
+									},
+								},
 
 								'@md': {
-									alignItems: 'center',
-									flexDirection: 'column',
+									alignItems: 'flex-start',
+									flexDirection: 'row',
+
+									'&>*:not(style)~*:not(style)': {
+										marginLeft: '2rem',
+									},
 								},
 							}}
 						>
@@ -217,6 +242,7 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 								<Stack
 									css={{
 										alignItems: 'flex-start',
+										flexDirection: 'column',
 										width: '100%',
 										marginLeft: 0,
 									}}
@@ -224,7 +250,7 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 								>
 									<Text
 										css={{
-											marginbottom: '0.5rem',
+											marginBottom: '0.5rem',
 											fontWeight: 'bold',
 											textTransform: 'uppercase',
 											color: '#0071ff',
@@ -235,23 +261,23 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 
 									<HStack
 										css={{
+											marginTop: '0.5rem',
 											width: '100%',
 										}}
 									>
 										<List
+											variant='footer-list'
 											css={{
-												display: 'flex',
-												flexWrap: 'wrap',
-												flexDirection: 'column',
-												height: '245px',
+												height: i === 1 ? '100%' : '245px',
 												width: '100%',
 
-												'@base': {
-													height: i === 1 ? '100%' : '245px',
-													width: i === 1 ? '440px' : '100%',
-												},
 												'@md': {
 													height: '100%',
+												},
+
+												'@xl': {
+													height: '245px',
+													width: i === 1 ? '440px' : '100%',
 												},
 											}}
 										>
@@ -259,12 +285,7 @@ export function Footer(props: { data?: FooterItem[]; groupCash?: [NodeWp][] }) {
 												const { newNameId } = renameId(node.label, item.name);
 
 												return (
-													<ListItem
-														key={index}
-														css={{
-															marginbottom: '0.5rem',
-														}}
-													>
+													<ListItem key={index} variant='footer-list'>
 														<Link
 															href={`${node.url}`}
 															id={newNameId}

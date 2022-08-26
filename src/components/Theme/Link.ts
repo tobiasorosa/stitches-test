@@ -22,8 +22,8 @@ export const Link = styled('a', {
 
 			'social-link': {
 				position: 'relative',
-				width: '2rem',
-				height: '2rem',
+				width: '2em',
+				height: '2em',
 				borderRadius: '50%',
 				color: 'white',
 				display: 'flex',

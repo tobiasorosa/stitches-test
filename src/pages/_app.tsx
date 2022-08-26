@@ -37,7 +37,6 @@ const globalStyles = globalCss({
 	p: {
 		fontSize: '16px',
 		marginTop: 0,
-		marginBottom: '1rem',
 	},
 	'img, svg': {
 		maxWidth: '100%',

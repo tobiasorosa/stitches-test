@@ -44,17 +44,23 @@ const CalculatorLayout: NextPage<CalculatorLayoutProps> = props => {
 
 	return (
 		<Context.Provider value={defaultValue}>
-			<Box>
+			<Box
+				css={{
+					height: 'auto',
+				}}
+			>
 				<Navbar data={menuData} />
 
 				<Container
 					css={{
 						marginTop: '2rem',
+						height: 'auto',
 					}}
 				>
 					<Stack
 						css={{
 							flexDirection: 'column',
+							height: 'auto',
 						}}
 					>
 						{breadcrumbs && <Breadcrumb items={breadcrumbs} />}

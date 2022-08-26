@@ -27,8 +27,11 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 		<Grid
 			css={{
 				gridTemplateColumns: 'repeat(12, [col-start] 1fr)',
-				gridColumnGap: '2rem',
 				gridRowGap: '2rem',
+
+				'@lg': {
+					gridColumnGap: '2rem',
+				},
 			}}
 			variant='content-layout'
 			// columnGap={{ base: 0, lg: 8 }}
