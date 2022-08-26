@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 						paddingTop: '1.5rem',
 						paddingBottom: 6,
 						borderBottomWidth: 2,
-						borderBottomColor: 'e5efff',
+						borderBottomColor: '#e5efff',
 						boxShadow: '0 4px 5px 0 #e6effd',
 
 						'@lg': {
@@ -79,15 +79,13 @@ const Navbar: React.FC<NavbarProps> = props => {
 								}}
 							>
 								{data?.map(it => (
-									<>
-										<NavbarOptions
-											key={it.id}
-											title={it.label}
-											categoryUrl={it.url}
-										>
-											<NavbarOptionsItems data-items={it.childItems} />
-										</NavbarOptions>
-									</>
+									<NavbarOptions
+										key={it.id}
+										title={it.label}
+										categoryUrl={it.url}
+									>
+										<NavbarOptionsItems data-items={it.childItems} />
+									</NavbarOptions>
 								))}
 							</HStack>
 						</Stack>
