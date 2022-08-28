@@ -11,6 +11,9 @@ export const Button = styled('button', {
 	verticalAlign: 'middle',
 	cursor: 'pointer',
 	lineHeight: 1.2,
+	transitionProperty:
+		'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
+	transitionDuration: '200ms',
 
 	'&[disabled]': {
 		cursor: 'not-allowed',
@@ -45,9 +48,6 @@ export const Button = styled('button', {
 				outline: '2px solid transparent',
 				outlineOffset: '2px',
 				fontWeight: 600,
-				transitionProperty:
-					'background-color,border-color,color,fill,stroke,opacity,box-shadow,transform',
-				transitionDuration: '200ms',
 				background: '#0066FF',
 				color: 'white',
 
@@ -111,6 +111,20 @@ export const Button = styled('button', {
 				height: '3rem',
 				minWidth: '3rem',
 				paddingInline: '1.5rem',
+			},
+
+			'menu-close': {
+				fontSize: '12px',
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				flexShrink: 0,
+				borderRadius: '0.375rem',
+				width: '2rem',
+				height: '2rem',
+				position: 'absolute',
+				top: '0.5rem',
+				right: '0.75rem',
 			},
 		},
 	},

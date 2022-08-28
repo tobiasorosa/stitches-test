@@ -12,6 +12,7 @@ export * from './Input';
 export * from './Label';
 export * from './Link';
 export * from './List';
+export * from './ModalContainer';
 export * from './Separator';
 export * from './Stack';
 export * from './Table';

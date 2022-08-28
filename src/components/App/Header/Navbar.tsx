@@ -5,6 +5,7 @@ import IdinheiroLogo from '~public/img/idinheiro.svg';
 import NavbarOptionsItems from './NavbarOptionsItems';
 import NavbarOptions from './NavbarOptions';
 import { Search } from './Search';
+import { MobileNavbar } from './MobileNavbar';
 
 interface NavbarProps {
 	data?: MenuItem[];
@@ -22,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 						position: 'relative',
 						zIndex: 1,
 						paddingTop: '1.5rem',
-						paddingBottom: 6,
+						paddingBottom: '1.5rem',
 						borderBottomWidth: 2,
 						borderBottomColor: '#e5efff',
 						boxShadow: '0 4px 5px 0 #e6effd',
@@ -65,6 +66,18 @@ const Navbar: React.FC<NavbarProps> = props => {
 								>
 									<Search />
 								</Box>
+
+								<Box
+									css={{
+										display: 'block',
+
+										'@lg': {
+											display: 'none',
+										},
+									}}
+								>
+									<MobileNavbar />
+								</Box>
 							</HStack>
 
 							<HStack
@@ -95,8 +108,13 @@ const Navbar: React.FC<NavbarProps> = props => {
 
 			<Box
 				css={{
-					display: 'none', //BASE BLOCK
-					marginTop: '0px !important',
+					justifyContent: 'space-between',
+					display: 'none',
+					marginTop: '2rem',
+
+					'@lg': {
+						display: 'inline-flex',
+					},
 				}}
 			>
 				{/* <C.Portal>

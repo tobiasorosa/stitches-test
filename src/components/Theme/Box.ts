@@ -41,6 +41,13 @@ export const Box = styled('div', {
 				alignItems: 'center',
 				whiteSpace: 'nowrap',
 			},
+
+			'mobile-menu': {
+				paddingInline: '1.5rem',
+				paddingY: '0.5rem',
+				flex: '1 1 0%',
+				overflow: 'auto',
+			},
 		},
 	},
 });

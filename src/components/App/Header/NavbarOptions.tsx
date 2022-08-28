@@ -2,18 +2,16 @@ import { Box, Button, Container, Link } from '../../Theme';
 import ChevronDown from '~public/img/icons/chevron-down.svg';
 
 interface NavbarOptionsProps {
-	key: string;
 	title: string;
 	categoryUrl: string;
 	children: React.ReactElement;
 }
 
 const NavbarOptions: React.FC<NavbarOptionsProps> = props => {
-	const { key, title, categoryUrl, children } = props;
+	const { title, categoryUrl, children } = props;
 
 	return (
 		<Box
-			key={key}
 			css={{
 				'&:hover': {
 					'& div div': { display: 'flex' },
@@ -26,7 +24,7 @@ const NavbarOptions: React.FC<NavbarOptionsProps> = props => {
 				<Button variant='menu'>
 					<Box
 						css={{
-							marginX: 1,
+							marginInline: '0.25rem',
 
 							'@xl': {
 								fontSize: '0.875rem',
@@ -35,7 +33,7 @@ const NavbarOptions: React.FC<NavbarOptionsProps> = props => {
 					>
 						{title}
 					</Box>
-					<ChevronDown width='1rem' />
+					<ChevronDown width='1em' />
 				</Button>
 			</Link>
 
