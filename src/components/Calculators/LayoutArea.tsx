@@ -62,7 +62,21 @@ export const LayoutArea = ({ children }: LayoutAreaProps) => {
 };
 
 const Content = ({ children }: HelperLayoutAreaProps) => {
-	return <>{children && <VStack>{children}</VStack>}</>;
+	return (
+		<>
+			{children && (
+				<VStack
+					css={{
+						'@lg': {
+							minHeight: '600px',
+						},
+					}}
+				>
+					{children}
+				</VStack>
+			)}
+		</>
+	);
 };
 
 const Sidebar = ({ children }: HelperLayoutAreaProps) => {

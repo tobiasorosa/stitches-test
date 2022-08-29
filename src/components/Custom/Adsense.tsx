@@ -2,7 +2,7 @@ import { CSS } from '@stitches/react';
 import React, { useEffect } from 'react';
 
 import { useScript } from '~src/utils/hooks/useScript';
-import { Box, Text } from '../Theme';
+import { AdsenseBlock, Box, Text } from '../Theme';
 
 export interface AdsenseProps {
 	slot: string;
@@ -18,12 +18,10 @@ export function Adsense(props: AdsenseProps) {
 	const {
 		slot,
 		format = 'auto',
-		ratio,
 		customClass,
 		showInfo = false,
 		fullWithResponsive = true,
 		css,
-		...rest
 	} = props;
 
 	useScript({
@@ -40,7 +38,11 @@ export function Adsense(props: AdsenseProps) {
 		<Box css={css}>
 			{showInfo && <Text variant='before-ad'>CONTINUA APÓS A PUBLICIDADE</Text>}
 
-			<Box>
+			<AdsenseBlock
+				variant={
+					process.env.NODE_ENV !== 'production' ? 'development' : 'development'
+				}
+			>
 				<ins
 					className={`adsbygoogle${customClass ? customClass : ''}`}
 					style={{ display: 'block' }}
@@ -50,7 +52,7 @@ export function Adsense(props: AdsenseProps) {
 					data-ad-format={format}
 					data-full-width-responsive={fullWithResponsive}
 				/>
-			</Box>
+			</AdsenseBlock>
 		</Box>
 	);
 }
