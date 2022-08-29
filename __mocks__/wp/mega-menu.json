@@ -1,0 +1,1016 @@
+[
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODEz",
+    "url": "https://www.idinheiro.com.br/categoria/cartao-de-credito/",
+    "label": "Cartão de Crédito",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUyNTAw",
+        "url": "https://www.idinheiro.com.br/categoria/cartao-de-credito/",
+        "label": "Melhores Cartões",
+        "parentId": "cG9zdDoxNjUzODEz",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTAy",
+            "url": "https://www.idinheiro.com.br/melhores-cartoes-de-credito/",
+            "label": "Melhores cartões de crédito",
+            "parentId": "cG9zdDoxNjUyNTAw",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTAx",
+            "url": "https://www.idinheiro.com.br/cartao-de-credito-com-limite-alto/",
+            "label": "Melhores cartões com limite alto",
+            "parentId": "cG9zdDoxNjUyNTAw",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTAz",
+            "url": "https://www.idinheiro.com.br/melhores-cartoes-de-credito-para-acumular-milhas/",
+            "label": "Cartões para acumular milhas",
+            "parentId": "cG9zdDoxNjUyNTAw",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUyNTA0",
+        "url": "https://www.idinheiro.com.br/categoria/cartao-de-credito/",
+        "label": "Cartões de Crédito",
+        "parentId": "cG9zdDoxNjUzODEz",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTA1",
+            "url": "https://www.idinheiro.com.br/como-ter-cartao-de-credito-aprovado-na-hora/",
+            "label": "Melhores cartões aprovados na hora",
+            "parentId": "cG9zdDoxNjUyNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTA2",
+            "url": "https://www.idinheiro.com.br/como-usar-o-cartao-de-credito/",
+            "label": "Como usar o cartão de crédito",
+            "parentId": "cG9zdDoxNjUyNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTA3",
+            "url": "https://www.idinheiro.com.br/como-aumentar-o-limite-do-cartao-de-credito/",
+            "label": "Como aumentar o limite",
+            "parentId": "cG9zdDoxNjUyNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTA4",
+            "url": "https://www.idinheiro.com.br/controle-de-cartao-de-credito/",
+            "label": "Como controlar seu cartão",
+            "parentId": "cG9zdDoxNjUyNTA0",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUyNTA5",
+        "url": "https://www.idinheiro.com.br/categoria/cartao-de-credito/",
+        "label": "Ferramentas",
+        "parentId": "cG9zdDoxNjUzODEz",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTEw",
+            "url": "https://www.idinheiro.com.br/cartao-de-credito/lista-de-cartoes/",
+            "label": "Compare Cartões",
+            "parentId": "cG9zdDoxNjUyNTA5",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTEx",
+            "url": "https://www.idinheiro.com.br/cartao-de-credito/lista-de-cartoes/",
+            "label": "Encontre o cartão ideal",
+            "parentId": "cG9zdDoxNjUyNTA5",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTEy",
+            "url": "https://idinheiro.typeform.com/to/h0e5mp6r",
+            "label": "Teste do melhor cartão",
+            "parentId": "cG9zdDoxNjUyNTA5",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUyNTEz",
+        "url": "https://www.idinheiro.com.br/calculadoras/",
+        "label": "Calculadoras",
+        "parentId": "cG9zdDoxNjUzODEz",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTE3",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-melhor-dia-cartao/",
+            "label": "Calculadora de melhor dia de compra no cartão",
+            "parentId": "cG9zdDoxNjUyNTEz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTE1",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/",
+            "label": "Calculadora de Salário Líquido",
+            "parentId": "cG9zdDoxNjUyNTEz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTE0",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/",
+            "label": "Calculadora de Férias",
+            "parentId": "cG9zdDoxNjUyNTEz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUyNTE2",
+            "url": "https://www.idinheiro.com.br/calculadoras/simulador-de-financiamento-de-veiculos/",
+            "label": "Simulador de financiamento de veículos",
+            "parentId": "cG9zdDoxNjUyNTEz",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODE2",
+    "url": "https://www.idinheiro.com.br/categoria/contas/",
+    "label": "Contas e Bancos",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDg3",
+        "url": "https://www.idinheiro.com.br/categoria/bancos/",
+        "label": "Bancos",
+        "parentId": "cG9zdDoxNjUzODE2",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDkw",
+            "url": "https://www.idinheiro.com.br/numero-dos-bancos-para-doc-e-ted/",
+            "label": "Número dos Bancos para TED",
+            "parentId": "cG9zdDoxNjUzNDg3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDkx",
+            "url": "https://www.idinheiro.com.br/servicos-bancarios-essenciais-gratuitos/",
+            "label": "Serviços Essenciais Gratuitos",
+            "parentId": "cG9zdDoxNjUzNDg3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDg4",
+            "url": "https://www.idinheiro.com.br/transferencias-bancos-diferentes/",
+            "label": "Transferências entre bancos diferentes ou iguais: PIX, TED ou DOC?",
+            "parentId": "cG9zdDoxNjUzNDg3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDg5",
+            "url": "https://www.idinheiro.com.br/como-pagar-menos-tarifas-bancarias/",
+            "label": "Como pagar menos tarifas bancárias? Escolha a conta certa e economize!",
+            "parentId": "cG9zdDoxNjUzNDg3",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDky",
+        "url": "https://www.idinheiro.com.br/categoria/contas/",
+        "label": "Contas",
+        "parentId": "cG9zdDoxNjUzODE2",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDkz",
+            "url": "https://www.idinheiro.com.br/banco-digital/",
+            "label": "Melhores bancos digitais",
+            "parentId": "cG9zdDoxNjUzNDky",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDk1",
+            "url": "https://www.idinheiro.com.br/melhores-contas-digitais/",
+            "label": "Melhores contas digitais",
+            "parentId": "cG9zdDoxNjUzNDky",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDk0",
+            "url": "https://www.idinheiro.com.br/melhores-carteiras-digitais/",
+            "label": "Melhores carteiras digitais",
+            "parentId": "cG9zdDoxNjUzNDky",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDk2",
+            "url": "https://www.idinheiro.com.br/bancos-que-aprovam-com-score-baixo/",
+            "label": "Bancos que aprovam com score baixo",
+            "parentId": "cG9zdDoxNjUzNDky",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDk3",
+        "url": "https://www.idinheiro.com.br/categoria/contas/",
+        "label": "Poupança",
+        "parentId": "cG9zdDoxNjUzODE2",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDk4",
+            "url": "https://www.idinheiro.com.br/como-abrir-uma-conta-poupanca-na-caixa/",
+            "label": "Como abrir conta poupança na Caixa",
+            "parentId": "cG9zdDoxNjUzNDk3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDk5",
+            "url": "https://www.idinheiro.com.br/rendimento-poupanca-hoje/",
+            "label": "Rendimento da poupança hoje",
+            "parentId": "cG9zdDoxNjUzNDk3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTAw",
+            "url": "https://www.idinheiro.com.br/poupanca-menor-de-idade/",
+            "label": "Poupança para menor de idade",
+            "parentId": "cG9zdDoxNjUzNDk3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTAx",
+            "url": "https://www.idinheiro.com.br/abrir-conta-poupanca-online/",
+            "label": "Abertura de poupança online",
+            "parentId": "cG9zdDoxNjUzNDk3",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDA1",
+        "url": "https://www.idinheiro.com.br/calculadoras/",
+        "label": "Calculadoras",
+        "parentId": "cG9zdDoxNjUzODE2",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTAy",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-correcao-de-valor-pela-poupanca/",
+            "label": "Calculadora Correção de Valores Pela Poupança",
+            "parentId": "cG9zdDoxNjUzNDA1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTAz",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-rendimento-da-poupanca/",
+            "label": "Calculadora do Rendimento da Poupança",
+            "parentId": "cG9zdDoxNjUzNDA1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDA3",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/",
+            "label": "Calculadora de Salário Líquido",
+            "parentId": "cG9zdDoxNjUzNDA1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDA4",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/",
+            "label": "Calculadora de Férias",
+            "parentId": "cG9zdDoxNjUzNDA1",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODE3",
+    "url": "https://www.idinheiro.com.br/categoria/negocios/",
+    "label": "Negócios",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTA2",
+        "url": "https://www.idinheiro.com.br/categoria/negocios/",
+        "label": "Máquinas de Cartão",
+        "parentId": "cG9zdDoxNjUzODE3",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTA5",
+            "url": "https://www.idinheiro.com.br/negocios/maquina-cartao-menor-taxa-debito/",
+            "label": "Máquininha com Menor Taxa",
+            "parentId": "cG9zdDoxNjUzNTA2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTA3",
+            "url": "https://www.idinheiro.com.br/negocios/melhores-maquinas-pessoa-fisica-autonomos/",
+            "label": "Melhor Máquina para Autônomo",
+            "parentId": "cG9zdDoxNjUzNTA2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTA4",
+            "url": "https://www.idinheiro.com.br/negocios/maquininha-de-cartao-de-credito/",
+            "label": "As 10 Melhores Maquininhas",
+            "parentId": "cG9zdDoxNjUzNTA2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTEw",
+            "url": "https://www.idinheiro.com.br/negocios/maquinas-cartao-pagam-na-hora/",
+            "label": "Máquininha com Pagamento na Hora",
+            "parentId": "cG9zdDoxNjUzNTA2",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTA1",
+        "url": "https://www.idinheiro.com.br/categoria/negocios/",
+        "label": "Produtos Financeiros",
+        "parentId": "cG9zdDoxNjUzODE3",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTEx",
+            "url": "https://www.idinheiro.com.br/negocios/tudo-sobre-emprestimo-para-mei/",
+            "label": "Empréstimo para MEI",
+            "parentId": "cG9zdDoxNjUzNTA1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTEy",
+            "url": "https://www.idinheiro.com.br/negocios/cartao-de-credito-pj/",
+            "label": "Cartão de crédito para PJ",
+            "parentId": "cG9zdDoxNjUzNTA1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTEz",
+            "url": "https://www.idinheiro.com.br/negocios/melhor-banco-para-abrir-conta-mei/",
+            "label": "Melhor banco para MEI",
+            "parentId": "cG9zdDoxNjUzNTA1",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTA0",
+        "url": "https://www.idinheiro.com.br/categoria/negocios/",
+        "label": "Seu Negócio",
+        "parentId": "cG9zdDoxNjUzODE3",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE0",
+            "url": "https://www.idinheiro.com.br/negocios/negocios-para-abrir-no-seu-bairro/",
+            "label": "Negócios que dão Lucro",
+            "parentId": "cG9zdDoxNjUzNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE3",
+            "url": "https://www.idinheiro.com.br/negocios/ideias-de-negocios-lucrativos/",
+            "label": "Negócios Lucrativos",
+            "parentId": "cG9zdDoxNjUzNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE1",
+            "url": "https://www.idinheiro.com.br/negocios/frases-para-atrair-clientes/",
+            "label": "Frases para Atrair Clientes",
+            "parentId": "cG9zdDoxNjUzNTA0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE2",
+            "url": "https://www.idinheiro.com.br/negocios/atividades-mei/",
+            "label": "Atividades MEI",
+            "parentId": "cG9zdDoxNjUzNTA0",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDI0",
+        "url": "https://www.idinheiro.com.br/calculadoras/",
+        "label": "Calculadoras",
+        "parentId": "cG9zdDoxNjUzODE3",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE5",
+            "url": "https://www.idinheiro.com.br/calculadoras/simulador-de-vendas-no-cartao/",
+            "label": "Simulador de vendas no Cartão",
+            "parentId": "cG9zdDoxNjUzNDI0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTE4",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-preco-de-venda/",
+            "label": "Calculadora de Preço de Venda",
+            "parentId": "cG9zdDoxNjUzNDI0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDI2",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/",
+            "label": "Calculadora de Salário Líquido",
+            "parentId": "cG9zdDoxNjUzNDI0",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDI3",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/",
+            "label": "Calculadora de Férias",
+            "parentId": "cG9zdDoxNjUzNDI0",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODE4",
+    "url": "https://www.idinheiro.com.br/categoria/emprestimos/",
+    "label": "Empréstimos e Financiamentos",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTIy",
+        "url": "https://www.idinheiro.com.br/categoria/emprestimos/",
+        "label": "Empréstimos",
+        "parentId": "cG9zdDoxNjUzODE4",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI0",
+            "url": "https://www.idinheiro.com.br/emprestimo-na-conta-de-luz/",
+            "label": "Empréstimo na conta de luz",
+            "parentId": "cG9zdDoxNjUzNTIy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI1",
+            "url": "https://www.idinheiro.com.br/melhores-empresas-de-emprestimo-online/",
+            "label": "Empresas de empréstimo online",
+            "parentId": "cG9zdDoxNjUzNTIy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI2",
+            "url": "https://www.idinheiro.com.br/melhor-banco-para-emprestimo/",
+            "label": "Melhor Banco para Empréstimo",
+            "parentId": "cG9zdDoxNjUzNTIy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI3",
+            "url": "https://www.idinheiro.com.br/melhores-fintechs-de-emprestimo/",
+            "label": "Fintechs de empréstimo",
+            "parentId": "cG9zdDoxNjUzNTIy",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTIz",
+        "url": "https://www.idinheiro.com.br/categoria/financiamentos/",
+        "label": "Financiamentos",
+        "parentId": "cG9zdDoxNjUzODE4",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI4",
+            "url": "https://www.idinheiro.com.br/melhor-financiamento-de-veiculos/",
+            "label": "Melhor financiamento de carros",
+            "parentId": "cG9zdDoxNjUzNTIz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTI5",
+            "url": "https://www.idinheiro.com.br/melhor-taxa-financiamento-imobiliario/",
+            "label": "Taxas de Financiamento Imobiliário",
+            "parentId": "cG9zdDoxNjUzNTIz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTMw",
+            "url": "https://www.idinheiro.com.br/tudo-sobre-financiamento-imobiliario/",
+            "label": "Como escolher o melhor",
+            "parentId": "cG9zdDoxNjUzNTIz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTMx",
+            "url": "https://www.idinheiro.com.br/refinanciamento-de-veiculos/",
+            "label": "Refinanciamento de veículos",
+            "parentId": "cG9zdDoxNjUzNTIz",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDM5",
+        "url": "https://www.idinheiro.com.br/categoria/cartao-de-credito/",
+        "label": "Ferramentas",
+        "parentId": "cG9zdDoxNjUzODE4",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQw",
+            "url": "https://www.idinheiro.com.br/emprestimos/lista-de-emprestimos/",
+            "label": "Encontre Empréstimos Pessoais",
+            "parentId": "cG9zdDoxNjUzNDM5",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQx",
+            "url": "https://www.idinheiro.com.br/financiamentos/lista-de-financiamentos-de-veiculos/",
+            "label": "Encontre um Financiamento de Veículo",
+            "parentId": "cG9zdDoxNjUzNDM5",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQy",
+            "url": "https://www.idinheiro.com.br/financiamentos/lista-de-financiamentos-imobiliario/",
+            "label": "Busque o Financiamento Imobiliário",
+            "parentId": "cG9zdDoxNjUzNDM5",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTMy",
+            "url": "https://simularemprestimoeasy.idinheiro.com.br/",
+            "label": "Empréstimos pré-aprovados",
+            "parentId": "cG9zdDoxNjUzNDM5",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDQz",
+        "url": "https://www.idinheiro.com.br/calculadoras/",
+        "label": "Calculadoras",
+        "parentId": "cG9zdDoxNjUzODE4",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTM0",
+            "url": "https://www.idinheiro.com.br/calculadoras/simulador-de-emprestimo/",
+            "label": "Simulador de Empréstimo",
+            "parentId": "cG9zdDoxNjUzNDQz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQ1",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/",
+            "label": "Calculadora de Salário Líquido",
+            "parentId": "cG9zdDoxNjUzNDQz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQ2",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/",
+            "label": "Calculadora de Férias",
+            "parentId": "cG9zdDoxNjUzNDQz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDQ3",
+            "url": "https://www.idinheiro.com.br/calculadoras/simulador-de-financiamento-de-veiculos/",
+            "label": "Simulador de financiamento de veículos",
+            "parentId": "cG9zdDoxNjUzNDQz",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODE5",
+    "url": "https://www.idinheiro.com.br/categoria/ganhar-dinheiro/",
+    "label": "Ganhar Dinheiro",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTM3",
+        "url": "https://www.idinheiro.com.br/categoria/ganhar-dinheiro/",
+        "label": "Ganhar Dinheiro",
+        "parentId": "cG9zdDoxNjUzODE5",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTM4",
+            "url": "https://www.idinheiro.com.br/aplicativos-para-ganhar-dinheiro/",
+            "label": "Aplicativos para ganhar dinheiro",
+            "parentId": "cG9zdDoxNjUzNTM3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTM5",
+            "url": "https://www.idinheiro.com.br/o-que-fazer-para-ganhar-dinheiro/",
+            "label": "Coisas para vender e ter renda",
+            "parentId": "cG9zdDoxNjUzNTM3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQw",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-na-internet/",
+            "label": "Ganhar dinheiro na internet",
+            "parentId": "cG9zdDoxNjUzNTM3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQx",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-em-casa/",
+            "label": "Como ter renda na crise",
+            "parentId": "cG9zdDoxNjUzNTM3",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTM2",
+        "url": "https://www.idinheiro.com.br/categoria/ganhar-dinheiro/",
+        "label": "Renda extra",
+        "parentId": "cG9zdDoxNjUzODE5",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQy",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-respondendo-pesquisas-online/",
+            "label": "Ganhar dinheiro respondendo pesquisas",
+            "parentId": "cG9zdDoxNjUzNTM2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQz",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-extra/",
+            "label": "Renda com produtos e serviços",
+            "parentId": "cG9zdDoxNjUzNTM2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ0",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-extra-nos-finais-de-semana/",
+            "label": "Dinheiro nos fins de semana",
+            "parentId": "cG9zdDoxNjUzNTM2",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ1",
+            "url": "https://www.idinheiro.com.br/ideias-para-ganhar-dinheiro-extra-com-pouco-investimento/",
+            "label": "Renda com baixo investimento",
+            "parentId": "cG9zdDoxNjUzNTM2",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTM1",
+        "url": "https://www.idinheiro.com.br/categoria/ganhar-dinheiro/",
+        "label": "Sites e Apps",
+        "parentId": "cG9zdDoxNjUzODE5",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ2",
+            "url": "https://www.idinheiro.com.br/aplicativos-para-ganhar-dinheiro/",
+            "label": "Aplicativos para ganhar dinheiro",
+            "parentId": "cG9zdDoxNjUzNTM1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ3",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-no-paypal/",
+            "label": "Ganhar dinheiro no Paypal",
+            "parentId": "cG9zdDoxNjUzNTM1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ4",
+            "url": "https://www.idinheiro.com.br/como-ganhar-dinheiro-no-youtube/",
+            "label": "Ganhar dinheiro no Youtube",
+            "parentId": "cG9zdDoxNjUzNTM1",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTQ5",
+            "url": "https://www.idinheiro.com.br/cashback/",
+            "label": "Dinheiro com Cashback",
+            "parentId": "cG9zdDoxNjUzNTM1",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNDYy",
+        "url": "https://www.idinheiro.com.br/calculadoras/",
+        "label": "Calculadoras",
+        "parentId": "cG9zdDoxNjUzODE5",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTUw",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-rescisao/",
+            "label": "Cálculo Rescisão CLT",
+            "parentId": "cG9zdDoxNjUzNDYy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDY0",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/",
+            "label": "Calculadora de Salário Líquido",
+            "parentId": "cG9zdDoxNjUzNDYy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDY1",
+            "url": "https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/",
+            "label": "Calculadora de Férias",
+            "parentId": "cG9zdDoxNjUzNDYy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNDY2",
+            "url": "https://www.idinheiro.com.br/calculadoras/simulador-de-financiamento-de-veiculos/",
+            "label": "Simulador de financiamento de veículos",
+            "parentId": "cG9zdDoxNjUzNDYy",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "__typename": "MenuItem",
+    "id": "cG9zdDoxNjUzODIw",
+    "url": "https://www.idinheiro.com.br/categoria/financaspessoais/",
+    "label": "+Finanças",
+    "parentId": "",
+    "childItems": [
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTUx",
+        "url": "https://www.idinheiro.com.br/categoria/investimentos/",
+        "label": "Corretoras",
+        "parentId": "cG9zdDoxNjUzODIw",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU0",
+            "url": "https://www.idinheiro.com.br/melhores-corretoras-criptomoedas/",
+            "label": "Melhores corretoras de criptomoedas",
+            "parentId": "cG9zdDoxNjUzNTUx",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU1",
+            "url": "https://www.idinheiro.com.br/melhor-corretora-de-valores-para-pequenos-investidores/",
+            "label": "Corretoras para pequenos investidores",
+            "parentId": "cG9zdDoxNjUzNTUx",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU2",
+            "url": "https://www.idinheiro.com.br/melhores-corretoras-para-day-trade/",
+            "label": "Corretoras para Day Trade",
+            "parentId": "cG9zdDoxNjUzNTUx",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU3",
+            "url": "https://www.idinheiro.com.br/melhores-corretoras-de-valores/",
+            "label": "Melhores corretoras de investimentos",
+            "parentId": "cG9zdDoxNjUzNTUx",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTUy",
+        "url": "https://www.idinheiro.com.br/categoria/investimentos/",
+        "label": "Investimentos",
+        "parentId": "cG9zdDoxNjUzODIw",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU4",
+            "url": "https://www.idinheiro.com.br/onde-investir-100-mil-reais/",
+            "label": "Onde investir 100 mil",
+            "parentId": "cG9zdDoxNjUzNTUy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTU5",
+            "url": "https://www.idinheiro.com.br/lci-e-lca/",
+            "label": "LCA e LCI: Como funcionam",
+            "parentId": "cG9zdDoxNjUzNTUy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTYw",
+            "url": "https://www.idinheiro.com.br/onde-investir-1000-mil-reais/",
+            "label": "Onde investir 1.000 reais",
+            "parentId": "cG9zdDoxNjUzNTUy",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTYx",
+            "url": "https://www.idinheiro.com.br/melhores-investimentos-para-iniciantes/",
+            "label": "Investimentos para iniciantes",
+            "parentId": "cG9zdDoxNjUzNTUy",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTUz",
+        "url": "https://www.idinheiro.com.br/categoria/seguros/",
+        "label": "Seguros",
+        "parentId": "cG9zdDoxNjUzODIw",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTYy",
+            "url": "https://www.idinheiro.com.br/tudo-sobre-seguro-para-pet/",
+            "label": "Seguro pet",
+            "parentId": "cG9zdDoxNjUzNTUz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTY0",
+            "url": "https://www.idinheiro.com.br/melhores-seguros-de-carro/",
+            "label": "Melhor seguro de carro",
+            "parentId": "cG9zdDoxNjUzNTUz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTY1",
+            "url": "https://www.idinheiro.com.br/melhor-seguro-de-vida/",
+            "label": "Melhor seguro de vida",
+            "parentId": "cG9zdDoxNjUzNTUz",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTY2",
+            "url": "https://www.idinheiro.com.br/melhor-seguro-para-celular/",
+            "label": "Seguros para Celular",
+            "parentId": "cG9zdDoxNjUzNTUz",
+            "childItems": []
+          }
+        ]
+      },
+      {
+        "__typename": "MenuItem",
+        "id": "cG9zdDoxNjUzNTY3",
+        "url": "https://www.idinheiro.com.br/tabelas/",
+        "label": "Índices Econômicos",
+        "parentId": "cG9zdDoxNjUzODIw",
+        "childItems": [
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTY4",
+            "url": "https://www.idinheiro.com.br/tabelas/tabela-ipca/",
+            "label": "Tabela IPCA",
+            "parentId": "cG9zdDoxNjUzNTY3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTY5",
+            "url": "https://www.idinheiro.com.br/tabelas/tabela-igp-m/",
+            "label": "Tabela IGPM",
+            "parentId": "cG9zdDoxNjUzNTY3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTcw",
+            "url": "https://www.idinheiro.com.br/tabelas/tabela-incc/",
+            "label": "Tabela INCC",
+            "parentId": "cG9zdDoxNjUzNTY3",
+            "childItems": []
+          },
+          {
+            "__typename": "MenuItem",
+            "id": "cG9zdDoxNjUzNTcx",
+            "url": "https://www.idinheiro.com.br/tabelas/tabela-inpc/",
+            "label": "Tabela INPC.",
+            "parentId": "cG9zdDoxNjUzNTY3",
+            "childItems": []
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -112,6 +112,14 @@ const globalStyles = globalCss({
 			},
 		},
 	},
+	'.accordion__panel': {
+		overflow: 'initial',
+		opacity: 1,
+		height: 'auto',
+		paddingTop: '1rem',
+		paddingBottom: '1.25rem',
+		paddingInline: '1rem',
+	},
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

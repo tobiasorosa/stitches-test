@@ -5,7 +5,8 @@ import IdinheiroLogo from '~public/img/idinheiro.svg';
 import NavbarOptionsItems from './NavbarOptionsItems';
 import NavbarOptions from './NavbarOptions';
 import { Search } from './Search';
-import { MobileNavbar } from './MobileNavbar';
+import { MobileNavbar } from './MobileNavbar/MobileNavbar';
+import mockMenuData from '~mocks/wp/mega-menu.json';
 
 interface NavbarProps {
 	data?: MenuItem[];
@@ -13,7 +14,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = props => {
 	const { data: SSRData, ...rest } = props;
-	const data = SSRData;
+	const data = SSRData || (mockMenuData as MenuItem[]);
 
 	return (
 		<>
@@ -76,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 										},
 									}}
 								>
-									<MobileNavbar />
+									<MobileNavbar data={data} />
 								</Box>
 							</HStack>
 
