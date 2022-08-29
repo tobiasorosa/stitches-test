@@ -1,14 +1,24 @@
-import { Box, Button, ModalContainer, ModalMenu, ModalOverlay } from '../Theme';
+import {
+	Box,
+	Button,
+	ModalContainer,
+	ModalMenu,
+	ModalOverlay,
+} from '../../../Theme';
 import CloseIcon from '~public/img/icons/close-icon.svg';
-import { Portal } from './Portal';
+import { Portal } from '../../../Layouts/Portal';
 
-interface ModalProps {
+interface NavbarModalProps {
 	children: React.ReactNode;
 	isOpen: boolean;
 	handleClose: () => void;
 }
 
-export const Modal = ({ children, isOpen, handleClose }: ModalProps) => {
+export const NavbarModal = ({
+	children,
+	isOpen,
+	handleClose,
+}: NavbarModalProps) => {
 	if (!isOpen) return null;
 
 	return (
@@ -44,7 +54,11 @@ export const Modal = ({ children, isOpen, handleClose }: ModalProps) => {
 					></div>
 					<Box>
 						<ModalMenu>
-							<Button variant='menu-close' onClick={handleClose}>
+							<Button
+								variant='menu-close'
+								onClick={handleClose}
+								color='transparent'
+							>
 								<CloseIcon width='1em' height='1em' />
 							</Button>
 							<Box variant='mobile-menu'>{children}</Box>

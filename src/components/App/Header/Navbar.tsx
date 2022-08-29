@@ -42,6 +42,7 @@ const Navbar: React.FC<NavbarProps> = props => {
 								<Link
 									href={'https://www.idinheiro.com.br/'}
 									css={{
+										display: 'inherit',
 										'@lg': {
 											height: '32px',
 										},
@@ -105,22 +106,6 @@ const Navbar: React.FC<NavbarProps> = props => {
 						</Stack>
 					</Container>
 				</Box>
-			</Box>
-
-			<Box
-				css={{
-					justifyContent: 'space-between',
-					display: 'none',
-					marginTop: '2rem',
-
-					'@lg': {
-						display: 'inline-flex',
-					},
-				}}
-			>
-				{/* <C.Portal>
-					<Local.SideMenu data={data} />
-				</C.Portal> */}
 			</Box>
 		</>
 	);

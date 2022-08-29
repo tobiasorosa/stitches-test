@@ -126,6 +126,14 @@ export const Button = styled('button', {
 				top: '0.5rem',
 				right: '0.75rem',
 			},
+
+			'mobile-navbar': {
+				verticalAlign: 'middle',
+				borderRadius: '9999px',
+				height: '2.5rem',
+				minWidth: '2.5rem',
+				width: 'auto',
+			},
 		},
 	},
 });

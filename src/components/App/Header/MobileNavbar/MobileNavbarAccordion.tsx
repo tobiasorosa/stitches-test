@@ -20,34 +20,6 @@ export const MobileNavbarAccordion = (props: { data: MenuItem[] }) => {
 					<MobileMenuItems data-items={it.childItems} categoryUrl={it.url} />
 				</MobileMenuOptions>
 			))}
-			{/* <AccordionItem>
-				<AccordionItemHeading>
-					<AccordionItemButton>
-						Cartão de Crédito
-						<ChevronDown width='1em' height='1em' fontSize='20px' />
-					</AccordionItemButton>
-				</AccordionItemHeading>
-				<AccordionItemPanel>
-					<VStack
-						css={{
-							alignItems: 'flex-start',
-							width: '100%',
-							padding: '1rem 0',
-						}}
-					>
-						<Link
-							css={{
-								textDecoration: 'underline',
-								marginBottom: '0.5rem',
-								fontWeight: 'bold',
-							}}
-						>
-							Visão geral
-						</Link>
-						<VStack variant='accordion-items'></VStack>
-					</VStack>
-				</AccordionItemPanel>
-			</AccordionItem> */}
 		</Accordion>
 	);
 };

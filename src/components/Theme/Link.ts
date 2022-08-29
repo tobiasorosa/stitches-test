@@ -31,6 +31,10 @@ export const Link = styled('a', {
 				justifyContent: 'center',
 				fontSize: '1.25rem',
 				backgroundColor: '#373737',
+
+				'&:focus': {
+					boxShadow: '0 0 0 3px rgba(66, 153, 225, 0.6)',
+				},
 			},
 		},
 	},
