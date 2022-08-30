@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
 	swcMinify: true,
 
@@ -15,6 +20,9 @@ const nextConfig = {
 	images: {
 		domains: ['www.idinheiro.com.br'],
 	},
-};
 
-module.exports = nextConfig;
+	publicRuntimeConfig: {
+		appEnv: process.env.APP_ENV,
+		nodeEnv: process.env.NODE_ENV,
+	},
+});
