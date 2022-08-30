@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<>
-			<Head {...pageProps.head} />
+			{/* <Head {...pageProps.head} /> */}
 			<Component {...pageProps} />;
 		</>
 	);
