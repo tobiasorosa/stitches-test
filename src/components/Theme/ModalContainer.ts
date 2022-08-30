@@ -2,7 +2,6 @@ import { styled } from '~src/styles/stitches.config';
 
 export const ModalContainer = styled('div', {
 	display: 'flex',
-	width: '100vw',
 	height: '100vh',
 	position: 'fixed',
 	left: '0px',

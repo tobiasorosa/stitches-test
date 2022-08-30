@@ -47,6 +47,11 @@ export const Box = styled('div', {
 				paddingY: '0.5rem',
 				flex: '1 1 0%',
 				overflow: 'auto',
+				scrollbarWidth: 0,
+
+				'&::-webkit-scrollbar': {
+					display: 'none',
+				},
 			},
 		},
 	},

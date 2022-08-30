@@ -14,10 +14,6 @@ export class ModelCustomAd implements IGutenberg {
 	readonly __type = 'custom';
 	readonly __name = 'ad';
 
-	/*  constructor(ratio?: number) {
-    this.ratio = ratio
-  } */
-
 	render() {
 		const slot = this.idBlock?.shift() ?? '3055626374';
 		return (

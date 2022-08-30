@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { globalCss } from '~/src/styles/stitches.config';
 import 'reflect-metadata';
 import { wpStyle } from '../styles/wpStyle';
+import { Head } from '../components/Custom/Head';
 
 const globalStyles = globalCss({
 	'*': {
@@ -129,7 +130,12 @@ const globalStyles = globalCss({
 function MyApp({ Component, pageProps }: AppProps) {
 	globalStyles();
 
-	return <Component {...pageProps} />;
+	return (
+		<>
+			<Head {...pageProps.head} />
+			<Component {...pageProps} />;
+		</>
+	);
 }
 
 export default MyApp;

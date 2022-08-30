@@ -16,6 +16,19 @@ export declare global {
 		id?: string | number;
 		name?: string;
 	}
+	
+	interface HeadProps {
+		locale?: string | null;
+		title?: string | null;
+		description?: string | null;
+		url?: string | null;
+		siteName?: string | null;
+		imageUrl?: string | null;
+		imageWidth?: string | number | null;
+		imageHeight?: string | number | null;
+		saswpSchema?: string;
+		canonical?: string;
+	}
 
 	namespace JSX {
 		interface AmpImg {
